@@ -1,0 +1,33 @@
+.hero-container {
+  color: var(--primary-color);
+
+  font-family: Roboto-Mono;
+
+  min-height: 100dvh;
+}
+
+.stars-container {
+  height: 100dvh;
+}
+
+.star {
+  background-color: var(--primary-color);
+
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 0.25rem;
+
+  position: fixed;
+
+  animation: twinkle 1s linear infinite alternate;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
