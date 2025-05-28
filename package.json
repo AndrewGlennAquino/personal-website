@@ -2,7 +2,7 @@
   "name": "personal-website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://andrewglennaquino.github.io/personal-website/",
+  "homepage": "https://www.andrewglennaquino.dev/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
