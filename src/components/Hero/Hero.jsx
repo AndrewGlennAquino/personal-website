@@ -37,6 +37,7 @@ function Hero() {
       <div className="title-container">
         <h1>Andrew Glenn Aquino</h1>
         <h2>Software Developer</h2>
+        <p>and professional home cook</p>
       </div>
 
       <div className="image-container">

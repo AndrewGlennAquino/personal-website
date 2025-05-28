@@ -20,22 +20,32 @@
       width: 0.15rem;
       height: 0.15rem;
       position: fixed;
-      animation: twinkle 0.5s linear infinite alternate;
+      animation: twinkle 1s linear infinite alternate;
     }
   }
 
+  & .title-container {
+    background-color: var(--background-color);
+    position: relative;
+    z-index: 1;
+  }
+
   & h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   & h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+
+  & p {
+    font-size: 1.5rem;
   }
 
   & .image-container {
-    border-radius: 25rem;
-    width: 25rem;
-    height: 25rem;
+    border-radius: 30rem;
+    width: 30rem;
+    height: 30rem;
     position: relative;
     z-index: 1;
     display: flex;
@@ -48,7 +58,7 @@
       background-image: url(../../assets/images/headshot.png);
       background-size: cover;
       background-position: center;
-      border-radius: 25rem;
+      border-radius: 30rem;
       width: 98%;
       height: 98%;
       position: absolute;
@@ -91,5 +101,111 @@
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Responsive design for small monitor */
+@media (max-width: 1024px) {
+  .hero-container {
+    padding: 1.5rem 3rem;
+
+    & h1 {
+      font-size: 2.75rem;
+    }
+
+    & h2 {
+      font-size: 2rem;
+    }
+
+    & p {
+      font-size: 1rem;
+    }
+
+    & .image-container {
+      border-radius: 23rem;
+      width: 23rem;
+      height: 23rem;
+
+      & .image-wrapper {
+        border-radius: 23rem;
+      }
+    }
+  }
+}
+
+/* Responsive design for tablet */
+@media (max-width: 800px) {
+  .hero-container {
+    padding: 1rem 2rem;
+
+    & h1 {
+      font-size: 2rem;
+    }
+
+    & h2 {
+      font-size: 1.5rem;
+    }
+
+    & p {
+      font-size: 0.75rem;
+    }
+
+    & .image-container {
+      border-radius: 17.5rem;
+      width: 17.5rem;
+      height: 17.5rem;
+
+      & .image-wrapper {
+        border-radius: 17.5rem;
+      }
+    }
+  }
+}
+
+/* Responsive design for large mobile */
+@media (max-width: 500px) {
+  .hero-container {
+    padding: 1rem 1.5rem;
+
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    & .title-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & h1 {
+      font-size: 1.75rem;
+    }
+
+    & h2 {
+      font-size: 1.5rem;
+    }
+
+    & p {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+/* Responsive design for small mobile */
+@media (max-width: 350px) {
+  .hero-container {
+    & h1 {
+      font-size: 1.45rem;
+    }
+
+    & h2 {
+      font-size: 1.25rem;
+    }
+
+    & p {
+      font-size: 0.75rem;
+    }
   }
 }
