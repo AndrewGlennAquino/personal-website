@@ -10,10 +10,12 @@ import Headshot from "../../assets/images/headshot.png";
  */
 function createStars(starsArray, numStars) {
   for (let i = 0; i < numStars; i++) {
+    // Randomly generate x, y positions and delay time
     let randX = Math.random() * 100 + "%";
     let randY = Math.random() * 100 + "%";
-    let randDelay = Math.random() * 1 + "s";
+    let randDelay = Math.random() * 5 + "s";
 
+    // Create a new star div element with random values and push to array
     starsArray.push(
       <div
         className="star"
@@ -26,14 +28,20 @@ function createStars(starsArray, numStars) {
 function Hero() {
   // Creates an array of randomly generated stars for hero
   const stars = [];
-  createStars(stars, 150);
+  createStars(stars, 500);
 
   return (
     <section className="hero-container">
       <div className="stars-container">{stars}</div>
-      <h1>Andrew Glenn Aquino</h1>
-      <p>Software Developer</p>
-      <img src={Headshot} />
+
+      <div className="title-container">
+        <h1>Andrew Glenn Aquino</h1>
+        <h2>Software Developer</h2>
+      </div>
+
+      <div className="image-container">
+        <div className="image-wrapper"></div>
+      </div>
     </section>
   );
 }

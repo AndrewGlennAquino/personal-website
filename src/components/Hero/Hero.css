@@ -1,39 +1,95 @@
 .hero-container {
   color: var(--primary-color);
-
   font-family: Roboto-Mono;
-
+  min-width: 100dvw;
   min-height: 100dvh;
+  padding: 2.5rem 5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   & .stars-container {
+    position: fixed;
+    min-width: 100%;
     min-height: 100%;
 
     & .star {
       background-color: var(--primary-color);
-
+      border-radius: 0.15rem;
       width: 0.15rem;
       height: 0.15rem;
-      border-radius: 0.15rem;
-
       position: fixed;
-
-      animation: twinkle 1s linear infinite alternate;
+      animation: twinkle 0.5s linear infinite alternate;
     }
   }
 
-  & img {
-    position: fixed;
+  & h1 {
+    font-size: 3rem;
+  }
 
+  & h2 {
+    font-size: 2rem;
+  }
+
+  & .image-container {
+    border-radius: 25rem;
+    width: 25rem;
+    height: 25rem;
+    position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    & .image-wrapper {
+      background-color: var(--background-color);
+      background-image: url(../../assets/images/headshot.png);
+      background-size: cover;
+      background-position: center;
+      border-radius: 25rem;
+      width: 98%;
+      height: 98%;
+      position: absolute;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      background-image: conic-gradient(transparent, var(--primary-color));
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      animation: spin 5s linear infinite;
+    }
+
+    &::before {
+      filter: blur(1rem);
+      opacity: 0.5;
+    }
   }
 }
 
+/* Animation for star elements */
 @keyframes twinkle {
-  0% {
+  from {
     opacity: 0;
   }
 
-  100% {
+  to {
     opacity: 1;
+  }
+}
+
+/* Animation for image-container element */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
