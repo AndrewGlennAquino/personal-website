@@ -4,22 +4,28 @@
   font-family: Roboto-Mono;
 
   min-height: 100dvh;
-}
 
-.stars-container {
-  height: 100dvh;
-}
+  & .stars-container {
+    min-height: 100%;
 
-.star {
-  background-color: var(--primary-color);
+    & .star {
+      background-color: var(--primary-color);
 
-  width: 0.25rem;
-  height: 0.25rem;
-  border-radius: 0.25rem;
+      width: 0.15rem;
+      height: 0.15rem;
+      border-radius: 0.15rem;
 
-  position: fixed;
+      position: fixed;
 
-  animation: twinkle 1s linear infinite alternate;
+      animation: twinkle 1s linear infinite alternate;
+    }
+  }
+
+  & img {
+    position: fixed;
+
+    z-index: 1;
+  }
 }
 
 @keyframes twinkle {
