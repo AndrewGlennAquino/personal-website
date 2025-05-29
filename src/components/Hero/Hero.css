@@ -44,15 +44,15 @@
   & h1 {
     font-size: 4rem;
     width: 100%;
-    animation: typing 2s steps(19) backwards,
-      cursor 0.5s step-end 4 alternate forwards;
+    animation: typing 2s steps(19) 2s backwards,
+      cursor 0.5s step-end 11 alternate forwards;
   }
 
   & h2 {
     font-size: 3rem;
     width: 71%;
-    animation: typing 2s steps(18) 2.5s backwards,
-      cursor 0.5s step-end 2.5s infinite alternate;
+    animation: typing 2s steps(18) 5.5s backwards,
+      cursor 0.5s step-end 5.5s infinite alternate;
   }
 
   & .image-container {
@@ -65,6 +65,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    animation: rise 1s ease-out;
 
     & .image-wrapper {
       background-color: var(--background-color);
@@ -80,12 +81,12 @@
     &::before,
     &::after {
       content: "";
-      background-image: conic-gradient(transparent, var(--primary-color));
+      background-image: conic-gradient(transparent 75%, var(--primary-color));
       height: 100%;
       width: 100%;
       position: absolute;
       z-index: -1;
-      animation: spin 15s linear infinite;
+      animation: spin 5s linear infinite forwards;
     }
 
     &::before {
@@ -117,6 +118,19 @@
 @keyframes typing {
   0% {
     width: 0;
+  }
+}
+
+/* Animation for image-container element */
+@keyframes rise {
+  0% {
+    top: 10rem;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
   }
 }
 
