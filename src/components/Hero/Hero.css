@@ -11,6 +11,7 @@
 
   & .stars-container {
     position: fixed;
+    z-index: -1;
     min-width: 100%;
     min-height: 100%;
 
@@ -25,7 +26,7 @@
   }
 
   & .title-container {
-    /* background-color: var(--background-color); */
+    background-color: var(--transparent-background-color);
     position: relative;
     z-index: 1;
     display: flex;
@@ -44,15 +45,15 @@
   & h1 {
     font-size: 4rem;
     width: 100%;
-    animation: typing 2s steps(19) 2s backwards,
+    animation: typing 1.5s steps(19) 2s backwards,
       cursor 0.5s step-end 11 alternate forwards;
   }
 
   & h2 {
     font-size: 3rem;
     width: 71%;
-    animation: typing 2s steps(18) 5.5s backwards,
-      cursor 0.5s step-end 5.5s infinite alternate;
+    animation: typing 1.5s steps(18) 6s backwards,
+      cursor 0.5s step-end 6s infinite alternate;
   }
 
   & .image-container {
@@ -60,12 +61,11 @@
     width: 30rem;
     height: 30rem;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    animation: rise 1s ease-out;
 
     & .image-wrapper {
       background-color: var(--background-color);
@@ -81,12 +81,16 @@
     &::before,
     &::after {
       content: "";
-      background-image: conic-gradient(transparent 75%, var(--primary-color));
+      background-image: conic-gradient(
+        transparent 75%,
+        var(--primary-color),
+        transparent
+      );
       height: 100%;
       width: 100%;
       position: absolute;
       z-index: -1;
-      animation: spin 5s linear infinite forwards;
+      animation: spin 10s linear infinite forwards;
     }
 
     &::before {
@@ -118,19 +122,6 @@
 @keyframes typing {
   0% {
     width: 0;
-  }
-}
-
-/* Animation for image-container element */
-@keyframes rise {
-  0% {
-    top: 10rem;
-    opacity: 0;
-  }
-
-  100% {
-    top: 0;
-    opacity: 1;
   }
 }
 
