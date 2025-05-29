@@ -20,26 +20,39 @@
       width: 0.15rem;
       height: 0.15rem;
       position: fixed;
-      animation: twinkle 1s linear infinite alternate;
+      animation: twinkle 1.5s linear infinite alternate;
     }
   }
 
   & .title-container {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  & h1,
+  & h2 {
+    border-right: 0.15rem solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
   }
 
   & h1 {
     font-size: 4rem;
+    width: 100%;
+    animation: typing 2s steps(19) backwards,
+      cursor 0.5s step-end 4 alternate forwards;
   }
 
   & h2 {
     font-size: 3rem;
-  }
-
-  & p {
-    font-size: 1.5rem;
+    width: 71%;
+    animation: typing 2s steps(18) 2.5s backwards,
+      cursor 0.5s step-end 2.5s infinite alternate;
   }
 
   & .image-container {
@@ -72,7 +85,7 @@
       width: 100%;
       position: absolute;
       z-index: -1;
-      animation: spin 5s linear infinite;
+      animation: spin 15s linear infinite;
     }
 
     &::before {
@@ -84,22 +97,36 @@
 
 /* Animation for star elements */
 @keyframes twinkle {
-  from {
-    opacity: 0;
+  0% {
+    opacity: 1;
   }
 
-  to {
-    opacity: 1;
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animation for blinking cursor */
+@keyframes cursor {
+  50% {
+    border-color: var(--primary-color);
+  }
+}
+
+/* Animation for typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
   }
 }
 
 /* Animation for image-container element */
 @keyframes spin {
-  from {
+  0% {
     transform: rotate(0deg);
   }
 
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -114,11 +141,7 @@
     }
 
     & h2 {
-      font-size: 2rem;
-    }
-
-    & p {
-      font-size: 1rem;
+      font-size: 2.05rem;
     }
 
     & .image-container {
@@ -146,10 +169,6 @@
       font-size: 1.5rem;
     }
 
-    & p {
-      font-size: 0.75rem;
-    }
-
     & .image-container {
       border-radius: 17.5rem;
       width: 17.5rem;
@@ -165,7 +184,7 @@
 /* Responsive design for large mobile */
 @media (max-width: 500px) {
   .hero-container {
-    padding: 1rem 1.5rem;
+    padding: 1rem;
 
     flex-direction: column-reverse;
     justify-content: center;
@@ -180,15 +199,22 @@
     }
 
     & h1 {
-      font-size: 1.75rem;
+      font-size: 1.85rem;
     }
 
     & h2 {
-      font-size: 1.5rem;
+      font-size: 1.65rem;
+      width: 85%;
     }
 
-    & p {
-      font-size: 0.75rem;
+    & .image-container {
+      border-radius: 15rem;
+      width: 15rem;
+      height: 15rem;
+
+      & .image-wrapper {
+        border-radius: 15rem;
+      }
     }
   }
 }
@@ -196,16 +222,15 @@
 /* Responsive design for small mobile */
 @media (max-width: 350px) {
   .hero-container {
+    padding: 0.75rem;
+
     & h1 {
-      font-size: 1.45rem;
+      font-size: 1.55rem;
     }
 
     & h2 {
-      font-size: 1.25rem;
-    }
-
-    & p {
-      font-size: 0.75rem;
+      font-size: 1.35rem;
+      width: 82%;
     }
   }
 }

@@ -13,7 +13,7 @@ function createStars(starsArray, numStars) {
     // Randomly generate x, y positions and delay time
     let randX = Math.random() * 100 + "%";
     let randY = Math.random() * 100 + "%";
-    let randDelay = Math.random() * 5 + "s";
+    let randDelay = Math.random() * 2 + "s";
 
     // Create a new star div element with random values and push to array
     starsArray.push(
@@ -37,7 +37,6 @@ function Hero() {
       <div className="title-container">
         <h1>Andrew Glenn Aquino</h1>
         <h2>Software Developer</h2>
-        <p>and professional home cook</p>
       </div>
 
       <div className="image-container">
