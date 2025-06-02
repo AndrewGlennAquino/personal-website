@@ -1,3 +1,48 @@
 .nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
+  & .hamburger-menu {
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    & .stack {
+      width: 2.5rem;
+      height: 0.25rem;
+      background-color: var(--primary-color);
+      transition: all 0.1s linear;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      width: 2.5rem;
+      height: 0.25rem;
+      background-color: var(--primary-color);
+      transition: transform 0.1s linear;
+    }
+
+    &.open {
+      & .stack {
+        transform: translateX(-1rem);
+        background-color: transparent;
+      }
+
+      &::before {
+        transform: translateY(0.75rem) rotate(45deg);
+      }
+
+      &::after {
+        transform: translateY(-0.75rem) rotate(-45deg);
+      }
+    }
+  }
 }

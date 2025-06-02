@@ -4,7 +4,7 @@
   height: 100dvh;
   position: fixed;
   z-index: 1;
-  animation: dissipate 1s linear 3.5s forwards;
+  animation: dissipate 2s linear 3.5s forwards;
 }
 
 /* Animation for initial black screen */
@@ -15,5 +15,6 @@
 
   100% {
     opacity: 0;
+    display: none;
   }
 }

@@ -3,7 +3,7 @@ import Headshot from "../../assets/images/headshot.png";
 
 /**
  * Function that randomly generates the position and animation delay for
- * a specified number of stars in the hero
+ * a specified number of stars
  *
  * @param { Array } starsArray array of stars for the hero
  * @param { Number } numStars number of stars for the hero
