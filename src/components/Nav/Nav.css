@@ -34,6 +34,13 @@
       transition: transform 0.1s linear;
     }
 
+    &:hover {
+      &::before,
+      &::after {
+        transform: translateX(0.5rem);
+      }
+    }
+
     &.open {
       & .stack {
         transform: translateX(-1rem);

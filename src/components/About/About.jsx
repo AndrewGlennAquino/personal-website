@@ -2,9 +2,9 @@ import "./About.css";
 
 function About() {
   return (
-    <div className="about-container">
-
-    </div>
+    <section className="about-container">
+      <div className="div-name">About</div>
+    </section>
   );
 }
 
