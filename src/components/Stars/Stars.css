@@ -1,0 +1,26 @@
+& .stars-container {
+  position: fixed;
+  z-index: -1;
+  min-width: 100dvw;
+  min-height: 100dvh;
+
+  & .star {
+    background-color: var(--primary-color);
+    border-radius: 0.05rem;
+    width: 0.05rem;
+    height: 0.05rem;
+    position: fixed;
+    animation: twinkle 1.5s linear infinite alternate;
+  }
+}
+
+/* Animation for star elements */
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

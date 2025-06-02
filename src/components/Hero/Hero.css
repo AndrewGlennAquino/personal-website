@@ -8,22 +8,6 @@
   justify-content: space-between;
   align-items: center;
 
-  & .stars-container {
-    position: fixed;
-    z-index: -1;
-    min-width: 100%;
-    min-height: 100%;
-
-    & .star {
-      background-color: var(--primary-color);
-      border-radius: 0.05rem;
-      width: 0.05rem;
-      height: 0.05rem;
-      position: fixed;
-      animation: twinkle 1.5s linear infinite alternate;
-    }
-  }
-
   & .title-container {
     position: relative;
     z-index: 1;
@@ -95,17 +79,6 @@
       filter: blur(1rem);
       opacity: 0.5;
     }
-  }
-}
-
-/* Animation for star elements */
-@keyframes twinkle {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
   }
 }
 
