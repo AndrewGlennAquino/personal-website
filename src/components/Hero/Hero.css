@@ -17,16 +17,15 @@
 
     & .star {
       background-color: var(--primary-color);
-      border-radius: 0.15rem;
-      width: 0.15rem;
-      height: 0.15rem;
+      border-radius: 0.05rem;
+      width: 0.05rem;
+      height: 0.05rem;
       position: fixed;
       animation: twinkle 1.5s linear infinite alternate;
     }
   }
 
   & .title-container {
-    background-color: var(--transparent-background-color);
     position: relative;
     z-index: 1;
     display: flex;
