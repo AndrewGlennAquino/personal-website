@@ -1,8 +1,8 @@
 & .stars-container {
   position: fixed;
   z-index: -1;
-  min-width: 100dvw;
-  min-height: 100dvh;
+  min-width: 100%;
+  min-height: 100%;
 
   & .star {
     background-color: var(--primary-color);
