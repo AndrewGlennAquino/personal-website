@@ -34,13 +34,6 @@
       transition: transform 0.1s linear;
     }
 
-    &:hover {
-      &::before,
-      &::after {
-        transform: translateX(0.5rem);
-      }
-    }
-
     &.open {
       & .stack {
         transform: translateX(-1rem);
@@ -53,6 +46,18 @@
 
       &::after {
         transform: translateY(-0.75rem) rotate(-45deg);
+      }
+    }
+  }
+}
+
+/* Hover effect for monitors */
+@media (min-width: 1024px) {
+  .hamburger-menu {
+    &:hover {
+      &::before,
+      &::after {
+        transform: translateX(0.5rem);
       }
     }
   }
