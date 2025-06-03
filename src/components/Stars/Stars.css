@@ -7,8 +7,8 @@
   & .star {
     background-color: var(--primary-color);
     border-radius: 0.05rem;
-    width: 0.05rem;
-    height: 0.05rem;
+    width: 0.1rem;
+    height: 0.1rem;
     position: fixed;
     animation: twinkle 1.5s linear infinite alternate;
   }

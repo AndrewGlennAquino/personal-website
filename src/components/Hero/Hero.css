@@ -1,14 +1,15 @@
 .hero-container {
   color: var(--primary-color);
   font-family: Roboto-Mono;
-  min-width: 100dvw;
-  min-height: 100dvh;
   position: relative;
-  display: flex;
-  justify-content: space-between;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
   align-items: center;
 
   & .title-container {
+    width: fit-content;
     position: relative;
     z-index: 2;
     display: flex;
@@ -39,9 +40,9 @@
   }
 
   & .image-container {
-    border-radius: 30rem;
-    width: 30rem;
-    height: 30rem;
+    border-radius: 25rem;
+    width: 25rem;
+    height: 25rem;
     position: relative;
     z-index: -1;
     display: flex;
@@ -107,6 +108,19 @@
   }
 }
 
+/* Responsive design for medium monitor */
+@media (max-width: 1280px) {
+  .hero-container {
+    & h1 {
+      font-size: 3rem;
+    }
+
+    & h2 {
+      font-size: 2.25rem;
+    }
+  }
+}
+
 /* Responsive design for small monitor */
 @media (max-width: 1024px) {
   .hero-container {
@@ -119,12 +133,12 @@
     }
 
     & .image-container {
-      border-radius: 23rem;
-      width: 23rem;
-      height: 23rem;
+      border-radius: 20rem;
+      width: 20rem;
+      height: 20rem;
 
       & .image-wrapper {
-        border-radius: 23rem;
+        border-radius: 20rem;
       }
     }
   }
@@ -142,26 +156,27 @@
     }
 
     & .image-container {
-      border-radius: 17.5rem;
-      width: 17.5rem;
-      height: 17.5rem;
+      border-radius: 15rem;
+      width: 15rem;
+      height: 15rem;
 
       & .image-wrapper {
-        border-radius: 17.5rem;
+        border-radius: 15rem;
       }
     }
   }
 }
 
 /* Responsive design for large mobile */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .hero-container {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
+    grid-template: 1fr 1fr / 1fr;
+    justify-items: center;
     gap: 2rem;
 
     & .title-container {
+      grid-area: 2 / 1 / 3 / 2;
+      align-self: flex-start;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -178,12 +193,14 @@
     }
 
     & .image-container {
-      border-radius: 15rem;
-      width: 15rem;
-      height: 15rem;
+      grid-area: 1 / 1 / 2 / 2;
+      align-self: flex-end;
+      border-radius: 12rem;
+      width: 12rem;
+      height: 12rem;
 
       & .image-wrapper {
-        border-radius: 15rem;
+        border-radius: 12rem;
       }
     }
   }
