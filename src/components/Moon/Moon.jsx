@@ -5,15 +5,9 @@ import "./Moon.css";
 
 function RotatingMoon() {
   const moonRef = useRef();
-  const [baseMap, roughMap, normalMap, heightMap, aoMap] = useLoader(
+  const texture = useLoader(
     TextureLoader,
-    [
-      "/moon-textures/Rock_041_basecolor.jpg",
-      "/moon-textures/Rock_041_roughness.jpg",
-      "/moon-textures/Rock_041_normal.jpg",
-      "/moon-textures/Rock_041_height.png",
-      "/moon-textures/Rock_041_ambientOcclusion.jpg",
-    ]
+    "/moon-textures/Rock_041_basecolor.jpg"
   );
 
   useFrame(() => {
@@ -23,14 +17,7 @@ function RotatingMoon() {
   return (
     <mesh ref={moonRef}>
       <sphereGeometry args={[3, 200, 200]} />
-      <meshStandardMaterial
-        map={baseMap}
-        roughnessMap={roughMap}
-        normalMap={normalMap}
-        displacementMap={heightMap}
-        displacementScale={0.15}
-        aoMap={aoMap}
-      />
+      <meshStandardMaterial map={texture} />
     </mesh>
   );
 }
@@ -40,7 +27,11 @@ function Moon() {
     <div id="canvas-container">
       <Canvas>
         <RotatingMoon />
-        <directionalLight position={[-10, 5, 5]} intensity={10} color={"rgb(240, 240, 240)"}/>
+        <directionalLight
+          position={[-10, 5, 5]}
+          intensity={10}
+          color={"rgb(240, 240, 240)"}
+        />
       </Canvas>
     </div>
   );
