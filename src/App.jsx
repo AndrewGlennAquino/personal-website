@@ -10,7 +10,7 @@ import About from "./components/About/About.jsx";
 function App() {
   return (
     <>
-      <MouseTrail idleAnimation="true" color="rgb(240, 240, 240)" />
+      <MouseTrail color="rgb(240, 240, 240)" />
       <Loading />
       <Stars />
       <Nav />
