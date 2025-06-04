@@ -39,47 +39,11 @@
       cursor 0.5s step-end 6s infinite alternate;
   }
 
-  & .image-container {
-    border-radius: 25rem;
-    width: 25rem;
-    height: 25rem;
-    position: relative;
-    z-index: -1;
+  & .moon-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-
-    & .image-wrapper {
-      background-color: var(--background-color);
-      background-image: url(../../assets/images/headshot.png);
-      background-size: cover;
-      background-position: center;
-      border-radius: 30rem;
-      width: 98%;
-      height: 98%;
-      position: absolute;
-    }
-
-    &::before,
-    &::after {
-      content: "";
-      background-image: conic-gradient(
-        transparent 75%,
-        var(--primary-color),
-        transparent
-      );
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      z-index: -1;
-      animation: spin 10s linear infinite forwards;
-    }
-
-    &::before {
-      filter: blur(1rem);
-      opacity: 0.5;
-    }
+    z-index: -1;
   }
 }
 
@@ -94,17 +58,6 @@
 @keyframes typing {
   0% {
     width: 0;
-  }
-}
-
-/* Animation for image-container element */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
   }
 }
 

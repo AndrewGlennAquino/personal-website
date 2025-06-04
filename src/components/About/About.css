@@ -1,9 +1,120 @@
 .about-container {
   min-height: 100dvh;
+  display: flex;
 
   & .div-name {
     width: 100%;
     height: 100%;
     background-color: var(--primary-color);
   }
+
+  & .image-container {
+    border-radius: 25rem;
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    & .image-wrapper {
+      background-color: var(--background-color);
+      background-image: url(../../assets/images/headshot.png);
+      background-size: cover;
+      background-position: center;
+      border-radius: 30rem;
+      width: 98%;
+      height: 98%;
+      position: absolute;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      background-image: conic-gradient(
+        transparent 75%,
+        var(--primary-color),
+        transparent
+      );
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      animation: spin 10s linear infinite forwards;
+    }
+
+    &::before {
+      filter: blur(1rem);
+      opacity: 0.5;
+    }
+  }
+}
+
+/* Animation for image-container element */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive design for medium monitor */
+@media (max-width: 1280px) {
+}
+
+/* Responsive design for small monitor */
+@media (max-width: 1024px) {
+  .about-container {
+    & .image-container {
+      border-radius: 20rem;
+      width: 20rem;
+      height: 20rem;
+
+      & .image-wrapper {
+        border-radius: 20rem;
+      }
+    }
+  }
+}
+
+/* Responsive design for tablet */
+@media (max-width: 800px) {
+  .about-container {
+    & .image-container {
+      border-radius: 15rem;
+      width: 15rem;
+      height: 15rem;
+
+      & .image-wrapper {
+        border-radius: 15rem;
+      }
+    }
+  }
+}
+
+/* Responsive design for large mobile */
+@media (max-width: 600px) {
+  .about-container {
+    & .image-container {
+      grid-area: 1 / 1 / 2 / 2;
+      align-self: flex-end;
+      border-radius: 12rem;
+      width: 12rem;
+      height: 12rem;
+
+      & .image-wrapper {
+        border-radius: 12rem;
+      }
+    }
+  }
+}
+
+/* Responsive design for small mobile */
+@media (max-width: 350px) {
+
 }

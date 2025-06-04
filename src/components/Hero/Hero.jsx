@@ -1,4 +1,5 @@
 import "./Hero.css";
+import Moon from "../Moon/Moon.jsx";
 
 function Hero() {
   return (
@@ -8,8 +9,8 @@ function Hero() {
         <h2>Software Developer</h2>
       </div>
 
-      <div className="image-container">
-        <div className="image-wrapper"></div>
+      <div className="moon-container">
+        <Moon />
       </div>
     </section>
   );

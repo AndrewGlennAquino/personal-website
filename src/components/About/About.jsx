@@ -3,7 +3,9 @@ import "./About.css";
 function About() {
   return (
     <section className="about-container">
-      <div className="div-name">About</div>
+      <div className="image-container">
+        <div className="image-wrapper"></div>
+      </div>
     </section>
   );
 }
