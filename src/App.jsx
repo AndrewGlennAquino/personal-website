@@ -1,4 +1,4 @@
-import { MouseTrail } from "@stichiboi/react-elegant-mouse-trail";
+import MouseTrail from "@pjsalita/react-mouse-trail";
 import "./App.css";
 import Loading from "./components/Loading/Loading.jsx";
 import Stars from "./components/Stars/Stars.jsx";
@@ -10,7 +10,7 @@ import About from "./components/About/About.jsx";
 function App() {
   return (
     <>
-      <MouseTrail strokeColor="rgb(240, 240, 240)" />
+      <MouseTrail idleAnimation="true" color="rgb(240, 240, 240)" />
       <Loading />
       <Stars />
       <Nav />
