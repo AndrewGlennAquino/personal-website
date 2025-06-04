@@ -25,6 +25,10 @@ html {
 
 /* Responsive design for tablet */
 @media (max-width: 800px) {
+  #react-mouse-trail {
+    display: none;
+  }
+
   #root > * {
     padding: 1rem 2rem;
   }
