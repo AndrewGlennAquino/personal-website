@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@stichiboi/react-elegant-mouse-trail": "^1.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
