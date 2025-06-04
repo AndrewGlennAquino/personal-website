@@ -2,7 +2,7 @@
   color: var(--primary-color);
   font-family: Roboto-Mono;
   position: relative;
-  min-height: 100dvh;
+  height: 100dvh;
   display: grid;
   grid-template-columns: 3fr 1fr;
   justify-content: center;
@@ -40,9 +40,6 @@
   }
 
   & .moon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: -1;
   }
 }
@@ -84,16 +81,6 @@
     & h2 {
       font-size: 2.05rem;
     }
-
-    & .image-container {
-      border-radius: 20rem;
-      width: 20rem;
-      height: 20rem;
-
-      & .image-wrapper {
-        border-radius: 20rem;
-      }
-    }
   }
 }
 
@@ -106,16 +93,6 @@
 
     & h2 {
       font-size: 1.5rem;
-    }
-
-    & .image-container {
-      border-radius: 15rem;
-      width: 15rem;
-      height: 15rem;
-
-      & .image-wrapper {
-        border-radius: 15rem;
-      }
     }
   }
 }
@@ -145,16 +122,9 @@
       width: 85%;
     }
 
-    & .image-container {
+    & .moon-container {
       grid-area: 1 / 1 / 2 / 2;
       align-self: flex-end;
-      border-radius: 12rem;
-      width: 12rem;
-      height: 12rem;
-
-      & .image-wrapper {
-        border-radius: 12rem;
-      }
     }
   }
 }
