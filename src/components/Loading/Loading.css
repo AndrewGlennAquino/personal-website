@@ -1,20 +1,8 @@
+/* Loading screen style */
 .loading-container {
   background-color: var(--background-color);
   min-width: 100dvw;
   min-height: 100dvh;
   position: fixed;
   z-index: 2;
-  animation: dissipate 2s linear 3.5s forwards;
-}
-
-/* Animation for initial black screen */
-@keyframes dissipate {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-    display: none;
-  }
 }

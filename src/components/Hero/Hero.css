@@ -1,3 +1,4 @@
+/* Hero container style */
 .hero-container {
   color: var(--primary-color);
   font-family: Roboto-Mono;
@@ -8,6 +9,7 @@
   justify-content: center;
   align-items: center;
 
+  /* Title container style */
   & .title-container {
     width: fit-content;
     position: relative;
@@ -17,44 +19,29 @@
     gap: 1rem;
   }
 
+  /* h1 and h2 shared styles */
   & h1,
   & h2 {
-    border-right: 0.15rem solid transparent;
-    white-space: nowrap;
+    border-right: 0.25rem solid rgba(240, 240, 240, 1);
     overflow: hidden;
+    white-space: nowrap;
     display: inline-block;
+    width: fit-content;
   }
 
+  /* h1 style */
   & h1 {
     font-size: 4rem;
-    width: 100%;
-    animation: typing 1.5s steps(19) 2s backwards,
-      cursor 0.5s step-end 11 alternate forwards;
   }
 
+  /* h2 style */
   & h2 {
     font-size: 3rem;
-    width: 71%;
-    animation: typing 1.5s steps(18) 6s backwards,
-      cursor 0.5s step-end 6s infinite alternate;
   }
 
+  /* Moon container style */
   & .moon-container {
     z-index: -1;
-  }
-}
-
-/* Animation for blinking cursor */
-@keyframes cursor {
-  50% {
-    border-color: var(--primary-color);
-  }
-}
-
-/* Animation for typing effect */
-@keyframes typing {
-  0% {
-    width: 0;
   }
 }
 
@@ -119,7 +106,6 @@
 
     & h2 {
       font-size: 1.65rem;
-      width: 85%;
     }
 
     & .moon-container {
@@ -138,7 +124,6 @@
 
     & h2 {
       font-size: 1.35rem;
-      width: 82%;
     }
   }
 }

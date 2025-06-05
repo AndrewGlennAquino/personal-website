@@ -1,7 +1,16 @@
 import "./Loading.css";
+import { motion } from "motion/react";
 
+// Component that serves as the initial loading screen
 function Loading() {
-  return <div className="loading-container"></div>;
+  return (
+    <motion.div
+      className="loading-container"
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 0, display: "none"}}
+      transition={{ duration: 2, delay: 3.5 }}
+    ></motion.div>
+  );
 }
 
 export default Loading;

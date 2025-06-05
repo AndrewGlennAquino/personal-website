@@ -1,3 +1,4 @@
+/* Star container style */
 & .stars-container {
   position: fixed;
   z-index: -5;
@@ -10,13 +11,5 @@
     width: 0.1rem;
     height: 0.1rem;
     position: fixed;
-    animation: twinkle 1.5s linear infinite alternate;
-  }
-}
-
-/* Animation for star elements */
-@keyframes twinkle {
-  100% {
-    opacity: 0;
   }
 }

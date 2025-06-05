@@ -3,13 +3,15 @@ import { Canvas, useLoader, useFrame } from "@react-three/fiber";
 import { TextureLoader } from "three";
 import "./Moon.css";
 
+// Animated rotating moon built using React Three Fiber
 function RotatingMoon() {
-  const moonRef = useRef();
+  const moonRef = useRef(); // React hook that holds rotation.y value
   const texture = useLoader(
     TextureLoader,
     "/moon-textures/Rock_041_basecolor.jpg"
   );
 
+  // React Three Fiber hook that updates moonRef rotation.y value every frame
   useFrame(() => {
     moonRef.current.rotation.y += 0.001;
   });
@@ -22,6 +24,7 @@ function RotatingMoon() {
   );
 }
 
+// Canvas container component that wraps RotatingMoon component
 function Moon() {
   return (
     <div id="canvas-container">

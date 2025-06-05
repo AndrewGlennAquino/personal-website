@@ -1,9 +1,11 @@
+/* Nav container style */
 .nav-container {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1;
 
+  /* Hamburger menu button style */
   & .hamburger-menu {
     background-color: transparent;
     border: 0;
@@ -14,47 +16,13 @@
     gap: 0.5rem;
     cursor: none;
 
-    & .stack {
+    /* Stack style for hamburger menu */
+    & .stack-middle,
+    & .stack-top,
+    & .stack-bottom {
       width: 2.5rem;
       height: 0.25rem;
       background-color: var(--primary-color);
-      transition: all 0.1s linear;
-    }
-
-    &::before,
-    &::after {
-      content: "";
-      width: 2.5rem;
-      height: 0.25rem;
-      background-color: var(--primary-color);
-      transition: transform 0.1s linear;
-    }
-
-    &.open {
-      & .stack {
-        transform: translateX(-1rem);
-        background-color: transparent;
-      }
-
-      &::before {
-        transform: translateY(0.75rem) rotate(45deg);
-      }
-
-      &::after {
-        transform: translateY(-0.75rem) rotate(-45deg);
-      }
-    }
-  }
-}
-
-/* Hover effect for monitors */
-@media (min-width: 1024px) {
-  .hamburger-menu {
-    &:hover {
-      &::before,
-      &::after {
-        transform: translateX(0.5rem);
-      }
     }
   }
 }
