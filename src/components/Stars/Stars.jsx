@@ -13,12 +13,13 @@ function createStars(starsArray, numStars) {
     let randX = Math.random() * 100 + "%";
     let randY = Math.random() * 100 + "%";
     let randDelay = Math.random() * 2 + "s";
+    let randOpacity = Math.random();
 
     // Create a new star div element with random values and push to array
     starsArray.push(
       <div
         className="star"
-        style={{ left: randX, top: randY, animationDelay: randDelay }}
+        style={{ left: randX, top: randY, animationDelay: randDelay, opacity: randOpacity}}
       ></div>
     );
   }

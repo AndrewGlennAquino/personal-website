@@ -29,6 +29,10 @@
 
 /* Responsive design for large mobile */
 @media (max-width: 600px) {
+  #canvas-container {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 /* Responsive design for small mobile */

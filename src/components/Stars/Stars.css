@@ -16,10 +16,6 @@
 
 /* Animation for star elements */
 @keyframes twinkle {
-  0% {
-    opacity: 1;
-  }
-
   100% {
     opacity: 0;
   }
