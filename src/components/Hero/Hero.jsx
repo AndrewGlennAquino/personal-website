@@ -9,9 +9,9 @@ function Hero() {
         <h2>Software Developer</h2>
       </div>
 
-      <div className="moon-container">
+      <figure className="moon-container">
         <Moon />
-      </div>
+      </figure>
     </section>
   );
 }
