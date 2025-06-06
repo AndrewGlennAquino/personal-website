@@ -22,11 +22,9 @@
   /* h1 and h2 shared styles */
   & h1,
   & h2 {
-    border-right: 0.25rem solid rgba(240, 240, 240, 1);
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
-    width: fit-content;
   }
 
   /* h1 style */
