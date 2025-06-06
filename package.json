@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "@pjsalita/react-mouse-trail": "^1.0.8",
+    "@react-three/drei": "^10.1.2",
     "@react-three/fiber": "^9.1.2",
+    "@react-three/postprocessing": "^3.0.4",
     "@types/three": "^0.177.0",
     "motion": "^12.16.0",
     "react": "^19.1.0",

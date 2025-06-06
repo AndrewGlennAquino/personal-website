@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import "./Hero.css";
-import Moon from "../Moon/Moon.jsx";
+import SolarSystem from "../SolarSystem/SolarSystem.jsx";
 
 // Animated typewritter component
 function TypeWritter({ string, variants }) {
@@ -18,7 +18,10 @@ function Hero() {
   const headerVariants = {
     init: {},
     animate: { opacity: 1, transition: { staggerChildren: 0.125 } },
-    animateDelay: { opacity: 1, transition: { staggerChildren: 0.125, delayChildren: 4.5 } }
+    animateDelay: {
+      opacity: 1,
+      transition: { staggerChildren: 0.125, delayChildren: 4.5 },
+    },
   };
 
   // Animation variants for span elements
@@ -40,15 +43,12 @@ function Hero() {
           animate="animateDelay"
           variants={headerVariants}
         >
-          <TypeWritter
-            string={"Software Developer"}
-            variants={spanVariants}
-          />
+          <TypeWritter string={"Software Developer"} variants={spanVariants} />
         </motion.h2>
       </div>
 
       <figure className="moon-container">
-        <Moon />
+        <SolarSystem />
       </figure>
     </section>
   );
