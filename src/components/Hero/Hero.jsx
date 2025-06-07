@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import "./Hero.css";
-import SolarSystem from "../SolarSystem/SolarSystem.jsx";
+import Sphere from "../Sphere/Sphere.jsx";
 
 // Animated typewritter component
 function TypeWritter({ string, variants }) {
@@ -33,6 +33,10 @@ function Hero() {
 
   return (
     <section className="hero-container">
+      <figure className="sphere-container">
+        <Sphere />
+      </figure>
+
       <div className="title-container">
         <motion.h1 initial="init" animate="animate" variants={headerVariants}>
           <TypeWritter string={"Andrew Glenn Aquino"} variants={spanVariants} />
@@ -46,10 +50,6 @@ function Hero() {
           <TypeWritter string={"Software Developer"} variants={spanVariants} />
         </motion.h2>
       </div>
-
-      <figure className="moon-container">
-        <Moon />
-      </figure>
     </section>
   );
 }

@@ -1,42 +1,38 @@
 /* Canvas container style */
 #canvas-container {
-  width: 32.5rem;
-  height: 32.5rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 /* Responsive design for medium monitor */
 @media (max-width: 1280px) {
   #canvas-container {
-    width: 30rem;
-    height: 30rem;
+    width: 15rem;
+    height: 15rem;
   }
 }
 
 /* Responsive design for small monitor */
 @media (max-width: 1024px) {
-  #canvas-container {
-    width: 25rem;
-    height: 25rem;
-  }
+
 }
 
 /* Responsive design for tablet */
 @media (max-width: 800px) {
   #canvas-container {
-    width: 22.5rem;
-    height: 22.5rem;
+    width: 12.5rem;
+    height: 12.5rem;
   }
 }
 
 /* Responsive design for large mobile */
 @media (max-width: 600px) {
-
+  #canvas-container {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 /* Responsive design for small mobile */
 @media (max-width: 350px) {
-  #canvas-container {
-    width: 17.5rem;
-    height: 17.5rem;
-  }
 }
