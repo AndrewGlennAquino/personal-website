@@ -1,13 +1,13 @@
 import * as THREE from "three";
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Trail, Float, Sphere } from "@react-three/drei";
+import { Trail, Sphere } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import "./SolarSystem.css";
 
-function Planet() {
+function Planet(props) {
   const planetRef = useRef();
-  const radius = 3;
+  const radius = 2;
   const speed = 1.5;
 
   useFrame((state) => {
@@ -20,16 +20,16 @@ function Planet() {
   });
 
   return (
-    <group>
+    <group {...props}>
       <Trail
-        width={5}
+        width={3}
         length={5}
-        color={new THREE.Color(10, 0.5, 5)}
+        color={new THREE.Color(0.5, 5, 0.5)}
         attenuation={(t) => t}
       >
         <mesh ref={planetRef}>
-          <sphereGeometry args={[0.2]} />
-          <meshBasicMaterial color={[5, 0.5, 10]} />
+          <sphereGeometry args={[0.15]} />
+          <meshBasicMaterial color={[0.25, 5, 0.25]} />
         </mesh>
       </Trail>
     </group>
@@ -39,9 +39,9 @@ function Planet() {
 function Star() {
   return (
     <group>
-      <Planet />
-      <Sphere args={[1, 64, 64]}>
-        <meshBasicMaterial color={[5, 0.5, 10]} />
+      <Planet position={[0, 0, 1]} />
+      <Sphere args={[0.75, 64, 64]}>
+        <meshBasicMaterial color={[2.5, 0.25, 5]} />
       </Sphere>
     </group>
   );
@@ -51,12 +51,10 @@ function Star() {
 function SolarSystem() {
   return (
     <div id="canvas-container">
-      <Canvas camera={{ position: [0, 0, 5] }}>
-        <Float speed={4} floatIntensity={1}>
-          <Star />
-        </Float>
+      <Canvas camera={{ position: [0, 0, 6] }}>
+        <Star />
         <EffectComposer>
-          <Bloom mipmapBlur radius={0.2} />
+          <Bloom mipmapBlur radius={0.25} />
         </EffectComposer>
       </Canvas>
     </div>

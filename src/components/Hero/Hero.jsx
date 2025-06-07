@@ -47,7 +47,7 @@ function Hero() {
         </motion.h2>
       </div>
 
-      <figure className="moon-container">
+      <figure className="solar-system-container">
         <SolarSystem />
       </figure>
     </section>

@@ -37,9 +37,7 @@
     font-size: 3rem;
   }
 
-  /* Moon container style */
-  & .moon-container {
-    z-index: -1;
+  & .solar-system-container {
   }
 }
 
@@ -104,11 +102,6 @@
 
     & h2 {
       font-size: 1.65rem;
-    }
-
-    & .moon-container {
-      grid-area: 1 / 1 / 2 / 2;
-      align-self: flex-end;
     }
   }
 }
