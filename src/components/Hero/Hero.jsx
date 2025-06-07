@@ -34,14 +34,18 @@ function Hero() {
   return (
     <section className="hero-container">
       <div className="title-container">
-        <motion.h1 initial="init" animate="animate" variants={headerVariants}>
-          <TypeWritter string={"Andrew Glenn Aquino"} variants={spanVariants} />
+        <motion.h1
+          initial={{ width: "0%" }}
+          animate={["typing", "cursor"]}
+          variants={nameVariants}
+        >
+          Andrew Glenn Aquino
         </motion.h1>
-
+        
         <motion.h2
-          initial="init"
-          animate="animateDelay"
-          variants={headerVariants}
+          initial={{ width: "0%", borderColor: "rgba(240, 240, 240, 0)" }}
+          animate={["typing", "cursor"]}
+          variants={titleVariants}
         >
           <TypeWritter string={"Software Developer"} variants={spanVariants} />
         </motion.h2>
