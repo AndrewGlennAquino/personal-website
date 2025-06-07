@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import "./Hero.css";
-import Sphere from "../Sphere/Sphere.jsx";
+import WireframeSphere from "../WireframeSphere/WireframeSphere.jsx";
 
 // Animated typewritter component
 function TypeWritter({ string, variants }) {
@@ -34,8 +34,9 @@ function Hero() {
   return (
     <section className="hero-container">
       <figure className="sphere-container">
-        <Sphere />
+        <WireframeSphere />
       </figure>
+
 
       <div className="title-container">
         <motion.h1 initial="init" animate="animate" variants={headerVariants}>
