@@ -28,7 +28,7 @@ function Hero() {
   const spanVariants = {
     init: { opacity: 0 },
     animate: { opacity: 1, transition: { opacity: { duration: 0 } } },
-    animateDelay: { opacity: 1, transition: { opacity: { duration: 0 } } },
+    // animateDelay: { opacity: 1, transition: { opacity: { duration: 0 } } },
   };
 
   return (
@@ -47,8 +47,8 @@ function Hero() {
         </motion.h2>
       </div>
 
-      <figure className="solar-system-container">
-        <SolarSystem />
+      <figure className="moon-container">
+        <Moon />
       </figure>
     </section>
   );
