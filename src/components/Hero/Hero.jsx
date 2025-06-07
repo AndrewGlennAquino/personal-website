@@ -16,11 +16,11 @@ function TypeWritter({ string, variants }) {
 function Hero() {
   // Animation variants for header elements
   const headerVariants = {
-    init: {},
-    animate: { opacity: 1, transition: { staggerChildren: 0.125 } },
+    init: { opacity: 0 },
+    animate: { opacity: 1, transition: { delayChildren: 1, staggerChildren: 0.125 } },
     animateDelay: {
       opacity: 1,
-      transition: { staggerChildren: 0.125, delayChildren: 4.5 },
+      transition: { delayChildren: 4 },
     },
   };
 
@@ -28,7 +28,13 @@ function Hero() {
   const spanVariants = {
     init: { opacity: 0 },
     animate: { opacity: 1, transition: { opacity: { duration: 0 } } },
-    animateDelay: { opacity: 1, transition: { opacity: { duration: 0 } } },
+    animateDelay: {
+      opacity: 1,
+      transition: {
+        duration: 2,
+        ease: "linear"
+      }
+    },
   };
 
   return (
@@ -36,7 +42,6 @@ function Hero() {
       <figure className="sphere-container">
         <WireframeSphere />
       </figure>
-
 
       <div className="title-container">
         <motion.h1 initial="init" animate="animate" variants={headerVariants}>
