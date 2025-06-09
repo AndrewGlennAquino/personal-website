@@ -4,14 +4,14 @@ import TypeWritter from "../TypeWritter/TypeWritter.jsx";
 
 // About section component
 function About() {
-  /** 
+  /**
    * Motion hooks that use gets the time every frame to transform the rotating background
    * from 0deg to 360 deg in 10 seconds
-   */ 
+   */
   const time = useTime();
   const rotate = useTransform(time, [0, 10000], [0, 360], { clamp: false });
   const rotatingBg = useTransform(rotate, (r) => {
-    return `conic-gradient(from ${r}deg, transparent 75%, var(--primary-color), transparent)`
+    return `conic-gradient(from ${r}deg, transparent 75%, var(--primary-color), transparent)`;
   });
 
   // Animation variants for typewritter header elements
@@ -32,8 +32,8 @@ function About() {
   // Animation variants for p and image elements
   const opacityVariants = {
     init: { opacity: 0 },
-    animate: { opacity: 1, transition: { duration: 1.5 } }
-  }
+    animate: { opacity: 1, transition: { duration: 1.5 } },
+  };
 
   return (
     <section className="about-container">
@@ -59,7 +59,7 @@ function About() {
         </motion.p>
       </div>
 
-      <motion.figure 
+      <motion.figure
         className="headshot-container"
         style={{ background: rotatingBg }}
         initial="init"

@@ -11,6 +11,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-self: flex-start;
+    text-wrap: balance;
     gap: 1rem;
 
     & h1 {
@@ -28,8 +30,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
+    width: 30rem;
+    height: 30rem;
 
     & .headshot-wrapper {
       background-image: url(../../assets/images/headshot.png);
@@ -58,8 +60,8 @@
     }
 
     & .headshot-container {
-      width: 15rem;
-      height: 15rem;
+      width: 25rem;
+      height: 25rem;
     }
   }
 }
@@ -76,30 +78,30 @@
         font-size: 1.125rem;
       }
     }
+
+    & .headshot-container {
+      width: 20rem;
+      height: 20rem;
+    }
   }
 }
 
 /* Responsive design for tablet */
 @media (max-width: 900px) {
   .about-container {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
     & .about-container-text {
       & h1 {
         font-size: 2rem;
-        text-align: center;
       }
 
       & p {
         font-size: 1rem;
-        text-align: center;
       }
     }
 
     & .headshot-container {
-      width: 12rem;
-      height: 12rem;
+      width: 15rem;
+      height: 15rem;
     }
   }
 }
@@ -107,15 +109,19 @@
 /* Responsive design for large mobile */
 @media (max-width: 600px) {
   .about-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
     & .about-container-text {
       & h1 {
         font-size: 1.75rem;
+        text-align: center;
       }
-    }
 
-    & .headshot-container {
-      width: 9rem;
-      height: 9rem;
+      & p {
+        text-align: center;
+      }
     }
   }
 }
