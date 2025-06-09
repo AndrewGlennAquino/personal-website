@@ -1,11 +1,12 @@
+html {
+  cursor: none;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background-color);
   font-family: Roboto-mono;
   overflow-x: hidden;
-}
-
-html {
-  cursor: none;
 }
 
 #root {

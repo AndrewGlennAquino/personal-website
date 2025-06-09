@@ -4,6 +4,9 @@
   top: 0;
   right: 0;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 
   /* Hamburger menu button style */
   & .hamburger-menu {
@@ -11,7 +14,6 @@
     border: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 0.5rem;
     cursor: none;
@@ -25,4 +27,67 @@
       background-color: var(--primary-color);
     }
   }
+}
+
+/* Links container style */
+.links-container {
+  color: var(--primary-color);
+
+  & ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  & a {
+    color: var(--primary-color);
+    text-wrap: nowrap;
+    font-size: 1.5rem;
+    cursor: none;
+    text-decoration: none;
+  }
+}
+
+/* Responsive design for medium monitor */
+@media (max-width: 1280px) {
+  .links-container {
+    & a {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+/* Responsive design for small monitor */
+@media (max-width: 1024px) {
+  .links-container {
+    & a {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+/* Responsive design for tablet */
+@media (max-width: 900px) {
+  .links-container {
+    & a {
+      font-size: 1rem;
+    }
+  }
+}
+
+/* Responsive design for large mobile */
+@media (max-width: 600px) {
+  .nav-container {
+    gap: 1rem;
+  }
+
+  .links-container {
+    & ul {
+      gap: 1rem;
+    }
+  }
+}
+
+/* Responsive design for small mobile */
+@media (max-width: 350px) {
 }

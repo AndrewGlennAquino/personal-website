@@ -4,12 +4,27 @@ import "./Nav.css";
 
 // Hamburger menu navigation component
 function Nav() {
-  // Holds state of hamburger menu button click
-  const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState(false); // Holds state of hamburger menu button click
+
+  // Arrays that hold the routes and link names
+  const links = ["Home", "About me"];
+  const routes = ["#hero-container", "#about-container"];
 
   // Function that handles hamburger-menu click
   function handleClick() {
     setClicked(!clicked);
+  }
+
+  // Function that creates links with animated bottom border
+  function createLinks(links, routes) {
+    return routes.map((route, index) => (
+      <motion.li
+        key={`${links[index]}-${route}`}
+        whileHover={{ scale: 1.25 }}
+      >
+        <a href={route}>{links[index]}</a>
+      </motion.li>
+    ));
   }
 
   // Animation variants for top and bottom stack divs
@@ -24,16 +39,31 @@ function Nav() {
     openMiddle: { x: "-1rem", opacity: 0 },
   };
 
+  // Animation variants for links container
+  const linksVariants = {
+    init: { opacity: 0, display: "none" },
+    animate: { opacity: 1, display: "block" },
+  };
+
   /**
    * On button click, set clicked state to true or false.
    * On state change, hover and click animations occur depending on variants.
    */
   return (
     <nav className="nav-container">
+      <motion.aside
+        className="links-container"
+        initial="init"
+        animate={clicked ? "animate" : null}
+        variants={linksVariants}
+      >
+        <ul>{createLinks(links, routes)}</ul>
+      </motion.aside>
+
       <motion.button
         className="hamburger-menu"
         onClick={handleClick}
-        whileHover={ clicked ? null : "animateHover" }
+        whileHover={clicked ? null : "animateHover"}
       >
         <motion.div
           className="stack-top"

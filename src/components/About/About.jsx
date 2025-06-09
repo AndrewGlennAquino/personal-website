@@ -19,24 +19,24 @@ function About() {
     init: { opacity: 0 },
     animate: {
       opacity: 1,
-      transition: { staggerChildren: 0.125 },
+      transition: { delayChildren: 0.125, staggerChildren: 0.125 },
     },
   };
 
   // Animation variants for typewritter span elements
   const spanVariants = {
     init: { opacity: 0 },
-    animate: { opacity: 1, transition: { opacity: { duration: 0 } } },
+    animate: { opacity: 1, transition: { duration: 0 } },
   };
 
   // Animation variants for p and image elements
   const opacityVariants = {
     init: { opacity: 0 },
-    animate: { opacity: 1, transition: { duration: 1.5 } },
+    animate: { opacity: 1, transition: { delay: 0.125, duration: 1.5 } },
   };
 
   return (
-    <section className="about-container">
+    <section id="about-container">
       <div className="about-container-text">
         <motion.h1
           initial="init"
@@ -50,6 +50,7 @@ function About() {
         <motion.p
           initial="init"
           whileInView="animate"
+          viewport={{ amount: "all" }}
           variants={opacityVariants}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam

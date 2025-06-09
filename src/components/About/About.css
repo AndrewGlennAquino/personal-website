@@ -1,5 +1,5 @@
 /* About container style */
-.about-container {
+#about-container {
   min-height: 100dvh;
   color: var(--primary-color);
   display: flex;
@@ -48,7 +48,7 @@
 
 /* Responsive design for medium monitor */
 @media (max-width: 1280px) {
-  .about-container {
+  #about-container {
     & .about-container-text {
       & h1 {
         font-size: 3rem;
@@ -68,7 +68,7 @@
 
 /* Responsive design for small monitor */
 @media (max-width: 1024px) {
-  .about-container {
+  #about-container {
     & .about-container-text {
       & h1 {
         font-size: 2.75rem;
@@ -88,7 +88,7 @@
 
 /* Responsive design for tablet */
 @media (max-width: 900px) {
-  .about-container {
+  #about-container {
     & .about-container-text {
       & h1 {
         font-size: 2rem;
@@ -108,7 +108,7 @@
 
 /* Responsive design for large mobile */
 @media (max-width: 600px) {
-  .about-container {
+  #about-container {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;

@@ -18,7 +18,7 @@ function Hero() {
   // Animation variants for span elements
   const spanVariants = {
     init: { opacity: 0 },
-    animate: { opacity: 1, transition: { opacity: { duration: 0 } } },
+    animate: { opacity: 1, transition: { duration: 0 } },
     animateDelay: {
       opacity: 1,
       transition: {
@@ -29,7 +29,7 @@ function Hero() {
   };
 
   return (
-    <section className="hero-container">
+    <section id="hero-container">
       <figure className="sphere-container">
         <WireframeSphere />
       </figure>
