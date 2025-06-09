@@ -1,16 +1,7 @@
 import { motion } from "motion/react";
 import "./Hero.css";
+import TypeWritter from "../TypeWritter/TypeWritter.jsx";
 import WireframeSphere from "../WireframeSphere/WireframeSphere.jsx";
-
-// Animated typewritter component
-function TypeWritter({ string, variants }) {
-  const charArray = string.split("");
-  return charArray.map((char, index) => (
-    <motion.span key={`${char}-${index}`} variants={variants}>
-      {char}
-    </motion.span>
-  ));
-}
 
 // Hero component that holds name, title, and animated moon
 function Hero() {
@@ -31,7 +22,7 @@ function Hero() {
     animateDelay: {
       opacity: 1,
       transition: {
-        duration: 2,
+        duration: 1.5,
         ease: "linear"
       }
     },
@@ -43,7 +34,7 @@ function Hero() {
         <WireframeSphere />
       </figure>
 
-      <div className="title-container">
+      <div className="hero-container-text">
         <motion.h1 initial="init" animate="animate" variants={headerVariants}>
           <TypeWritter string={"Andrew Glenn Aquino"} variants={spanVariants} />
         </motion.h1>

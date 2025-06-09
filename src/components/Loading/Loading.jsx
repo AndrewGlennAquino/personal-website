@@ -8,7 +8,7 @@ function Loading() {
       className="loading-container"
       initial={{ opacity: 1 }}
       animate={{ opacity: 0, display: "none"}}
-      transition={{ duration: 2, delay: 4, ease: "linear" }}
+      transition={{ duration: 1.5, delay: 4, ease: "linear" }}
     ></motion.div>
   );
 }

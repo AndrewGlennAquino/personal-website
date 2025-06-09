@@ -1,23 +1,127 @@
 /* About container style */
 .about-container {
   min-height: 100dvh;
-  
+  color: var(--primary-color);
+  display: grid;
+  grid-template: 1fr / 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+
+  & .about-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+    & h1 {
+      font-size: 4rem;
+    }
+
+    & p {
+      font-size: 1.5rem;
+    }
+  }
+
+  & .headshot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+
+    & .headshot-wrapper {
+      background-image: url(../../assets/images/headshot.png);
+      background-color: var(--background-color);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      width: 98%;
+      height: 98%;
+    }
+  }
 }
 
 /* Responsive design for medium monitor */
 @media (max-width: 1280px) {
+  .about-container {
+    & .about-container-text {
+      & h1 {
+        font-size: 3rem;
+      }
+
+      & p {
+        font-size: 1.25rem;
+      }
+    }
+
+    & .headshot-container {
+      width: 15rem;
+      height: 15rem;
+    }
+  }
 }
 
 /* Responsive design for small monitor */
 @media (max-width: 1024px) {
+  .about-container {
+    & .about-container-text {
+      & h1 {
+        font-size: 2.75rem;
+      }
+
+      & p {
+        font-size: 1.125rem;
+      }
+    }
+  }
 }
 
 /* Responsive design for tablet */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+  .about-container {
+    grid-template: 1fr 1fr / 1fr;
+
+    & .about-container-text {
+      grid-area: 2 / 1 / 3 / 2;
+      align-items: center;
+      align-self: flex-start;
+
+      & h1 {
+        font-size: 2rem;
+      }
+
+      & p {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+
+    & .headshot-container {
+      grid-area: 1 / 1 / 2 / 2;
+      align-self: flex-end;
+      width: 12rem;
+      height: 12rem;
+    }
+  }
 }
 
 /* Responsive design for large mobile */
 @media (max-width: 600px) {
+  .about-container {
+    & .about-container-text {
+      & h1 {
+        font-size: 1.75rem;
+      }
+    }
+
+    & .headshot-container {
+      width: 9rem;
+      height: 9rem;
+    }
+  }
 }
 
 /* Responsive design for small mobile */

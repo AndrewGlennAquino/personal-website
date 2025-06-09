@@ -9,11 +9,6 @@
   src: url(./assets/fonts/RobotoMono-VariableFont.ttf);
 }
 
-@font-face {
-  font-family: Roboto;
-  src: url(./assets/fonts/Roboto-VariableFont.ttf);
-}
-
 * {
   margin: 0;
   padding: 0;

@@ -1,6 +1,6 @@
 body {
   background-color: var(--background-color);
-  font-family: Roboto;
+  font-family: Roboto-mono;
   overflow-x: hidden;
 }
 
@@ -18,17 +18,17 @@ html {
 
 /* Responsive design for small monitor */
 @media (max-width: 1024px) {
+  #react-mouse-trail {
+    display: none;
+  }
+
   #root > * {
     padding: 1.5rem 3rem;
   }
 }
 
 /* Responsive design for tablet */
-@media (max-width: 800px) {
-  #react-mouse-trail {
-    display: none;
-  }
-
+@media (max-width: 900px) {
   #root > * {
     padding: 1rem 2rem;
   }
