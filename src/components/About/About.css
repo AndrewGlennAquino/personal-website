@@ -2,8 +2,7 @@
 .about-container {
   min-height: 100dvh;
   color: var(--primary-color);
-  display: grid;
-  grid-template: 1fr / 2fr 1fr;
+  display: flex;
   justify-items: center;
   align-items: center;
   gap: 1rem;
@@ -25,6 +24,7 @@
 
   & .headshot-container {
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -82,15 +82,13 @@
 /* Responsive design for tablet */
 @media (max-width: 900px) {
   .about-container {
-    grid-template: 1fr 1fr / 1fr;
-
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     & .about-container-text {
-      grid-area: 2 / 1 / 3 / 2;
-      align-items: center;
-      align-self: flex-start;
-
       & h1 {
         font-size: 2rem;
+        text-align: center;
       }
 
       & p {
@@ -100,8 +98,6 @@
     }
 
     & .headshot-container {
-      grid-area: 1 / 1 / 2 / 2;
-      align-self: flex-end;
       width: 12rem;
       height: 12rem;
     }

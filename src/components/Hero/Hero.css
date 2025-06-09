@@ -2,10 +2,11 @@
 .hero-container {
   color: var(--primary-color);
   position: relative;
-  height: 100dvh;
-  display: grid;
-  grid-template: 1fr 1fr / 1fr;
-  justify-items: center;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 
   /* Title container style */
@@ -34,11 +35,6 @@
   /* h2 style */
   & h2 {
     font-size: 3rem;
-  }
-
-  & .sphere-container {
-    justify-self: center;
-    align-self: flex-end;
   }
 }
 
