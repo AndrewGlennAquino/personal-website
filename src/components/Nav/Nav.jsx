@@ -7,8 +7,8 @@ function Nav() {
   const [clicked, setClicked] = useState(false); // Holds state of hamburger menu button click
 
   // Arrays that hold the routes and link names
-  const links = ["Home", "About me"];
-  const routes = ["#hero-container", "#about-container"];
+  const links = ["Home", "About me", "Projects", "Skills"];
+  const routes = ["#hero-container", "#about-container", "#projects-container", "#skills-container"];
 
   // Function that handles hamburger-menu click
   function handleClick() {

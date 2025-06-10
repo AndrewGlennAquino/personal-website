@@ -1,0 +1,170 @@
+#projects-container {
+  color: var(--primary-color);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  & h1 {
+    font-size: 4rem;
+  }
+
+  & .projects {
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+
+    & .project {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      & .blurred-bg {
+        background-color: transparent;
+        filter: blur(1rem);
+        border-radius: 10%;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+      }
+
+      & .project-contents {
+        background-color: var(--background-color);
+        border: 0.1rem solid var(--primary-color);
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        width: 98%;
+        height: 98%;
+      }
+
+      & .project-image {
+        background-image: url(../../assets/images/placeholder.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 15rem;
+        height: 10rem;
+      }
+
+      & h2 {
+        font-size: 1.5rem;
+      }
+
+      & p {
+        font-size: 1.25rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* Responsive design for medium monitor */
+@media (max-width: 1280px) {
+  #projects-container {
+    & h1 {
+      font-size: 3rem;
+    }
+
+    & .projects {
+      & .project {
+        & .project-image {
+          width: 12.5rem;
+          height: 10rem;
+        }
+
+        & p {
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive design for small monitor */
+@media (max-width: 1024px) {
+  #projects-container {
+    & h1 {
+      font-size: 2.75rem;
+    }
+
+    & .projects {
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+      & .project {
+        & .project-image {
+          width: 15rem;
+          height: 10rem;
+        }
+
+        & p {
+          font-size: 0.9rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive design for tablet */
+@media (max-width: 900px) {
+  #projects-container {
+    & h1 {
+      font-size: 2rem;
+    }
+
+    & .projects {
+      & .project {
+        & .project-image {
+          width: 15rem;
+          height: 10rem;
+        }
+
+        & p {
+          font-size: 0.85rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive design for large mobile */
+@media (max-width: 600px) {
+  #projects-container {
+    & h1 {
+      font-size: 1.75rem;
+      text-align: center;
+    }
+
+    & .projects {
+      grid-template: repeat(4, 1fr) / 1fr;
+
+      & .project {
+        & .project-image {
+          width: 15rem;
+          height: 10rem;
+        }
+
+        & p {
+          font-size: 0.8rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive design for small mobile */
+@media (max-width: 350px) {
+}

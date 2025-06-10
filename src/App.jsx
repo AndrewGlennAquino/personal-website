@@ -5,7 +5,7 @@ import Stars from "./components/Stars/Stars.jsx";
 import Nav from "./components/Nav/Nav.jsx";
 import Hero from "./components/Hero/Hero.jsx";
 import About from "./components/About/About.jsx";
-
+import Projects from "./components/Projects/Projects.jsx";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <Nav />
       <Hero />
       <About />
+      <Projects />
     </>
   );
 }
