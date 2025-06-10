@@ -1,6 +1,5 @@
 html {
   cursor: none;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -17,12 +16,14 @@ body {
   padding: 2.5rem 5rem;
 }
 
-/* Responsive design for small monitor */
-@media (max-width: 1024px) {
+@media (pointer:coarse) {
   #react-mouse-trail {
     display: none;
   }
+}
 
+/* Responsive design for small monitor */
+@media (max-width: 1024px) {
   #root > * {
     padding: 1.5rem 3rem;
   }
