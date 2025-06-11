@@ -8,7 +8,6 @@ import tempImage from "../../assets/images/placeholder.jpg";
  * Animated card component for projects
  * 
  * @param {{string, string, img, string}} props Project name, description, image, and Github URL
- * @returns 
  */
 function Project({ name, description, image, url }) {
   const projectVariants = {
