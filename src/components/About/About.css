@@ -7,6 +7,7 @@
   align-items: center;
   gap: 1rem;
 
+  /* About container text style */
   & .about-container-text {
     display: flex;
     flex-direction: column;
@@ -24,6 +25,7 @@
     }
   }
 
+  /* Style for container holding headshot */
   & .headshot-container {
     display: flex;
     flex-shrink: 0;
@@ -33,15 +35,22 @@
     width: 30rem;
     height: 30rem;
 
+    /* Style for image wrapper and image */
     & .headshot-wrapper {
-      background-image: url(../../assets/images/headshot.png);
       background-color: var(--background-color);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border-radius: 50%;
       width: 98%;
       height: 98%;
+      overflow: hidden;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }

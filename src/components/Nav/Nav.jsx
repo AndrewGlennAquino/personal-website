@@ -21,6 +21,7 @@ function Nav() {
       <motion.li
         key={`${links[index]}-${route}`}
         whileHover={{ scale: 1.25 }}
+        whileTap={{ scale: 1.25 }}
       >
         <a href={route}>{links[index]}</a>
       </motion.li>
@@ -50,7 +51,12 @@ function Nav() {
    * On state change, hover and click animations occur depending on variants.
    */
   return (
-    <nav className="nav-container">
+    <motion.nav 
+      className="nav-container"
+      initial={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
+      animate={clicked ? {backgroundColor: "var(--transparent-background-color)"} : null }
+      variants={linksVariants}
+    >
       <motion.aside
         className="links-container"
         initial="init"
@@ -83,7 +89,7 @@ function Nav() {
           variants={topBottomVariants}
         ></motion.div>
       </motion.button>
-    </nav>
+    </motion.nav>
   );
 }
 

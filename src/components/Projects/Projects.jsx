@@ -1,36 +1,56 @@
 import "./Projects.css";
 import { motion } from "motion/react";
 import TypeWritter from "../TypeWritter/TypeWritter";
+import openInNewIcon from "../../assets/images/open-in-new-icon.png";
+import tempImage from "../../assets/images/placeholder.jpg";
 
-// Animated card component for projects
-function Project({ projectName, projectDescription }) {
+/**
+ * Animated card component for projects
+ * 
+ * @param {{string, string, img, string}} props Project name, description, image, and Github URL
+ * @returns 
+ */
+function Project({ name, description, image, url }) {
   const projectVariants = {
-    init: {},
     animate: { backgroundColor: "var(--primary-color)" },
     scale: { scale: 1.05 },
   };
 
+  // Return animated project card
   return (
-    <motion.article
-      className={`project ${projectName}`}
-      init="init"
-      whileHover={["animate", "scale"]}
-    >
-      <motion.div
-        className="blurred-bg"
-        variants={projectVariants}
-      ></motion.div>
-
-      <motion.div
-        className="project-contents"
-        whileHover="scale"
-        variants={projectVariants}
+    <a href={url} target="_blank">
+      <motion.article
+        className={`project ${name}`}
+        whileHover={["animate", "scale"]}
+        whileTap={["animate", "scale"]}
       >
-        <div className={`project-image ${projectName}-image`}></div>
-        <h2>{projectName}</h2>
-        <p>{projectDescription}</p>
-      </motion.div>
-    </motion.article>
+        <motion.div
+          className="blurred-bg"
+          variants={projectVariants}
+        ></motion.div>
+
+        <motion.div
+          className="project-contents"
+          whileHover="scale"
+          variants={projectVariants}
+        >
+          <div className={`project-image`}>
+            <img
+              src={image}
+              alt={`Screenshot from project ${name}`}
+            />
+          </div>
+          <h2>
+            {name}
+            <img
+              src={openInNewIcon}
+              alt="Open project in new tab"
+            />
+          </h2>
+          <p>{description}</p>
+        </motion.div>
+      </motion.article>
+    </a>
   );
 }
 
@@ -54,6 +74,7 @@ function Projects() {
   const tempName = "Project";
   const tempDesc =
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam minus, provident accusantium quis veritatis labore dolore quam! Doloribus cumque praesentium veritatis exercitationem, eos perspiciatis velit delectus est ipsam nihil aliquam.";
+  const tempGithubUrl = "#";
 
   return (
     <section id="projects-container">
@@ -77,10 +98,30 @@ function Projects() {
           },
         }}
       >
-        <Project projectName={tempName} projectDescription={tempDesc} />
-        <Project projectName={tempName} projectDescription={tempDesc} />
-        <Project projectName={tempName} projectDescription={tempDesc} />
-        <Project projectName={tempName} projectDescription={tempDesc} />
+        <Project
+          name={tempName}
+          description={tempDesc}
+          image={tempImage}
+          url={tempGithubUrl}
+        />
+        <Project
+          name={tempName}
+          description={tempDesc}
+          image={tempImage}
+          url={tempGithubUrl}
+        />
+        <Project
+          name={tempName}
+          description={tempDesc}
+          image={tempImage}
+          url={tempGithubUrl}
+        />
+        <Project
+          name={tempName}
+          description={tempDesc}
+          image={tempImage}
+          url={tempGithubUrl}
+        />
       </motion.div>
     </section>
   );

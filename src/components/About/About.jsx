@@ -1,6 +1,7 @@
 import "./About.css";
 import { motion, useTime, useTransform } from "motion/react";
 import TypeWritter from "../TypeWritter/TypeWritter.jsx";
+import headshotImage from "../../assets/images/headshot.png";
 
 // About section component
 function About() {
@@ -67,7 +68,9 @@ function About() {
         whileInView="animate"
         variants={opacityVariants}
       >
-        <div className="headshot-wrapper"></div>
+        <div className="headshot-wrapper">
+          <img src={headshotImage} alt="Image of myself" />
+        </div>
       </motion.figure>
     </section>
   );
