@@ -34,27 +34,23 @@ function SocialMediaIcon({ icon, url, alt }) {
 
 // Hero component that holds name, title, and animated moon
 function Hero() {
-  // Animation variants for header elements
-  const headerVariants = {
+  // Animation variants for typewritter elements
+  const typewritterVariants = {
     init: { opacity: 0 },
     animate: {
       opacity: 1,
       transition: { delayChildren: 1, staggerChildren: 0.125 },
     },
-    animateDelay: {
-      opacity: 1,
-      transition: { delayChildren: 4 },
-    },
   };
 
-  // Animation variants for span elements
-  const spanVariants = {
+  // Animation variants that manipulate opacity
+  const opacityVariants = {
     init: { opacity: 0 },
-    animate: { opacity: 1, transition: { duration: 0 } },
-    animateDelay: {
+    animateOpacity: {
       opacity: 1,
       transition: {
         duration: 1.5,
+        delay: 4,
         ease: "linear",
       },
     },
@@ -67,25 +63,19 @@ function Hero() {
       </figure>
 
       <div className="hero-container-text">
-        <motion.h1 initial="init" animate="animate" variants={headerVariants}>
-          <TypeWritter string={"Andrew Glenn Aquino"} variants={spanVariants} />
+        <motion.h1
+          initial="init"
+          animate="animate"
+          variants={typewritterVariants}
+        >
+          <TypeWritter string={"Andrew Glenn Aquino"} />
         </motion.h1>
 
-        <motion.h2
-          initial="init"
-          animate="animateDelay"
-          variants={headerVariants}
-        >
-          <TypeWritter string={"Software Developer"} variants={spanVariants} />
+        <motion.h2 initial="init" animate="animateOpacity" variants={opacityVariants}>
+          Software Developer
         </motion.h2>
 
-        <motion.ul
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: { duration: 1.5, delay: 4, ease: "linear" },
-          }}
-        >
+        <motion.ul initial="init" animate="animateOpacity" variants={opacityVariants}>
           <SocialMediaIcon icon={githubIcon} url="#" alt="Github" />
           <SocialMediaIcon icon={linkedinIcon} url="#" alt="Linkedin" />
           <SocialMediaIcon icon={instagramIcon} url="#" alt="Instagram" />

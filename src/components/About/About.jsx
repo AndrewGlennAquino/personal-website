@@ -15,19 +15,13 @@ function About() {
     return `conic-gradient(from ${r}deg, transparent 75%, var(--primary-color), transparent)`;
   });
 
-  // Animation variants for typewritter header elements
-  const headerVariants = {
+  // Animation variants for typewritter elements
+  const typewritterVariants = {
     init: { opacity: 0 },
     animate: {
       opacity: 1,
       transition: { delayChildren: 0.125, staggerChildren: 0.125 },
     },
-  };
-
-  // Animation variants for typewritter span elements
-  const spanVariants = {
-    init: { opacity: 0 },
-    animate: { opacity: 1, transition: { duration: 0 } },
   };
 
   // Animation variants for p and image elements
@@ -43,9 +37,9 @@ function About() {
           initial="init"
           whileInView="animate"
           viewport={{ amount: "all" }}
-          variants={headerVariants}
+          variants={typewritterVariants}
         >
-          <TypeWritter string={"About me"} variants={spanVariants} />
+          <TypeWritter string={"About me"} />
         </motion.h1>
 
         <motion.p

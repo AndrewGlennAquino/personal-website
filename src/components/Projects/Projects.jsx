@@ -55,19 +55,13 @@ function Project({ name, description, image, url }) {
 
 // Component for projects container
 function Projects() {
-  // Animation variants for typewritter header elements
-  const headerVariants = {
+  // Animation variants for typewritter elements
+  const typewritterVariants = {
     init: { opacity: 0 },
     animate: {
       opacity: 1,
       transition: { delayChildren: 0.125, staggerChildren: 0.125 },
     },
-  };
-
-  // Animation variants for typewritter span elements
-  const spanVariants = {
-    init: { opacity: 0 },
-    animate: { opacity: 1, transition: { duration: 0 } },
   };
 
   const tempName = "Project";
@@ -81,9 +75,9 @@ function Projects() {
         initial="init"
         whileInView="animate"
         viewport={{ amount: "all" }}
-        variants={headerVariants}
+        variants={typewritterVariants}
       >
-        <TypeWritter string="Projects" variants={spanVariants} />
+        <TypeWritter string="Projects" />
       </motion.h1>
 
       <motion.div
