@@ -1,3 +1,49 @@
 #work-container {
+  color: var(--primary-color);
   min-height: 100dvh;
+  
+  & h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Responsive design for medium monitor */
+@media (max-width: 1280px) {
+  #work-container {
+    & h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+/* Responsive design for small monitor */
+@media (max-width: 1024px) {
+  #work-container {
+    & h1 {
+      font-size: 2.75rem;
+    }
+  }
+}
+
+/* Responsive design for tablet */
+@media (max-width: 900px) {
+  #work-container {
+    & h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+/* Responsive design for large mobile */
+@media (max-width: 600px) {
+  #work-container {
+    & h1 {
+      font-size: 1.75rem;
+      text-align: center;
+    }
+  }
+}
+
+/* Responsive design for small mobile */
+@media (max-width: 350px) {
 }

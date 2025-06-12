@@ -4,7 +4,6 @@ import TypeWritter from "../TypeWritter/TypeWritter.jsx";
 import WireframeSphere from "../WireframeSphere/WireframeSphere.jsx";
 import githubIcon from "../../assets/images/github-icon.svg";
 import linkedinIcon from "../../assets/images/linkedin-icon.svg";
-import instagramIcon from "../../assets/images/instagram-icon.svg";
 
 /**
  * Component that creates an animated social media button
@@ -32,7 +31,7 @@ function SocialMediaIcon({ icon, url, alt }) {
   );
 }
 
-// Hero component that holds name, title, and animated moon
+// Hero component that holds name, title, and animated wireframe
 function Hero() {
   // Animation variants for typewritter elements
   const typewritterVariants = {
@@ -78,7 +77,6 @@ function Hero() {
         <motion.ul initial="init" animate="animateOpacity" variants={opacityVariants}>
           <SocialMediaIcon icon={githubIcon} url="#" alt="Github" />
           <SocialMediaIcon icon={linkedinIcon} url="#" alt="Linkedin" />
-          <SocialMediaIcon icon={instagramIcon} url="#" alt="Instagram" />
         </motion.ul>
       </div>
     </section>
