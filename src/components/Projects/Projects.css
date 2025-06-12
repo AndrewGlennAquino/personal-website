@@ -147,13 +147,8 @@
       grid-template: repeat(4, 1fr) / 1fr;
 
       & .project {
-        & .project-contents {
-          align-items: center;
-        }
-
         & p {
           font-size: 0.8rem;
-          text-align: center;
         }
       }
     }

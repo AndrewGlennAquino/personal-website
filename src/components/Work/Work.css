@@ -1,3 +1,177 @@
 #work-container {
   min-height: 100dvh;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  & h1 {
+    font-size: 4rem;
+  }
+
+  & .experience-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    & .experience-card {
+      display: flex;
+      gap: 1rem;
+
+      & .experience-card-decoration {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+
+      & .experience-card-rod {
+        background-color: var(--primary-color);
+        width: 0.1rem;
+        height: 100%;
+      }
+
+      & .experience-card-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        & h2 {
+          font-size: 1.5rem;
+        }
+
+        & h3 {
+          color: rgba(240, 240, 240, 0.5);
+          font-size: 1.5rem;
+        }
+
+        & p {
+          font-size: 1.25rem;
+          margin: 1rem 0;
+        }
+
+        & h4 {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive design for medium monitor */
+@media (max-width: 1280px) {
+  #work-container {
+    & h1 {
+      font-size: 3rem;
+    }
+
+    & .experience-cards-container {
+      & .experience-card {
+        & .experience-card-text {
+          & h2 {
+            font-size: 1.25rem;
+          }
+
+          & h3 {
+            font-size: 1.25rem;
+          }
+
+          & p {
+            font-size: 1rem;
+            margin: 1rem 0;
+          }
+
+          & h4 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsive design for small monitor */
+@media (max-width: 1024px) {
+  #work-container {
+    & h1 {
+      font-size: 2.75rem;
+    }
+
+    & .experience-cards-container {
+      & .experience-card {
+        & .experience-card-text {
+          & h2 {
+            font-size: 1.125rem;
+          }
+
+          & h3 {
+            font-size: 1.125rem;
+          }
+
+          & p {
+            font-size: 0.9rem;
+            margin: 1rem 0;
+          }
+
+          & h4 {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsive design for tablet */
+@media (max-width: 900px) {
+  #work-container {
+    & h1 {
+      font-size: 2rem;
+    }
+
+    & .experience-cards-container {
+      & .experience-card {
+        & .experience-card-text {
+          & p {
+            font-size: 0.85rem;
+            margin: 1rem 0;
+          }
+
+          & h4 {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsive design for large mobile */
+@media (max-width: 600px) {
+  #work-container {
+    & h1 {
+      font-size: 1.75rem;
+      text-align: center;
+    }
+
+    & .experience-cards-container {
+      & .experience-card {
+        & .experience-card-text {
+          & p {
+            font-size: 0.8rem;
+            margin: 1rem 0;
+          }
+
+          & h4 {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsive design for small mobile */
+@media (max-width: 350px) {
 }
