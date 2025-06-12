@@ -7,16 +7,16 @@ function Nav() {
   const [clicked, setClicked] = useState(false); // Holds state of hamburger menu button click
 
   // Arrays that hold the routes and link names
-  const links = ["Home", "About me", "Projects", "Work experience", "Contact"];
-  const routes = ["#hero-container", "#about-container", "#projects-container", "#work-container", "#contact-container"];
+  const links = ["Home", "About me", "Projects", "Work experience", "Skills"];
+  const routes = ["#hero-container", "#about-container", "#projects-container", "#work-container", "#skills-container"];
 
   // Function that handles hamburger-menu click
-  const handleClick = () => {
+  function handleClick() {
     setClicked(!clicked);
   }
 
   // Function that creates links with animated bottom border
-  const createLinks = (links, routes) => {
+  function createLinks(links, routes) {
     return routes.map((route, index) => (
       <motion.li
         key={`${links[index]}-${route}`}
@@ -37,7 +37,7 @@ function Nav() {
 
   // Animation variants for middle stack div
   const middleVariants = {
-    openMiddle: { opacity: 0 },
+    openMiddle: { x: "-1rem", opacity: 0 },
   };
 
   // Animation variants for links container
