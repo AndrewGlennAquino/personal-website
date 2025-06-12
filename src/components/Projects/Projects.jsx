@@ -70,7 +70,7 @@ function Projects() {
   const tempGithubUrl = "#";
 
   return (
-    <section id="projects-container">
+    <section id="projects">
       <motion.h1
         initial="init"
         whileInView="animate"

@@ -47,7 +47,7 @@ function Work() {
   }
 
   return (
-    <section id="work-container">
+    <section id="work">
       <motion.h1
         initial="init"
         whileInView="animate"

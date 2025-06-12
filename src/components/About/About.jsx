@@ -31,7 +31,7 @@ function About() {
   };
 
   return (
-    <section id="about-container">
+    <section id="about">
       <div className="about-container-text">
         <motion.h1
           initial="init"

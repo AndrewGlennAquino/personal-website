@@ -56,7 +56,7 @@ function Hero() {
   };
 
   return (
-    <section id="hero-container">
+    <section id="home">
       <figure className="sphere-container">
         <WireframeSphere />
       </figure>

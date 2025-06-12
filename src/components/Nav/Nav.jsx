@@ -8,7 +8,7 @@ function Nav() {
 
   // Arrays that hold the routes and link names
   const links = ["Home", "About me", "Projects", "Work experience", "Contact"];
-  const routes = ["#hero-container", "#about-container", "#projects-container", "#work-container", "#contact-container"];
+  const routes = ["#home", "#about", "#projects", "#work", "#contact"];
 
   // Function that handles hamburger-menu click
   const handleClick = (e) => {

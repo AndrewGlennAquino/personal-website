@@ -1,5 +1,5 @@
 /* Projects container style */
-#projects-container {
+#projects {
   color: var(--primary-color);
   min-height: 100dvh;
   display: flex;
@@ -86,7 +86,7 @@
 
 /* Responsive design for medium monitor */
 @media (max-width: 1280px) {
-  #projects-container {
+  #projects {
     & h1 {
       font-size: 3rem;
     }
@@ -103,7 +103,7 @@
 
 /* Responsive design for small monitor */
 @media (max-width: 1024px) {
-  #projects-container {
+  #projects {
     & h1 {
       font-size: 2.75rem;
     }
@@ -120,7 +120,7 @@
 
 /* Responsive design for tablet */
 @media (max-width: 900px) {
-  #projects-container {
+  #projects {
     & h1 {
       font-size: 2rem;
     }
@@ -137,7 +137,7 @@
 
 /* Responsive design for large mobile */
 @media (max-width: 600px) {
-  #projects-container {
+  #projects {
     & h1 {
       font-size: 1.75rem;
       text-align: center;

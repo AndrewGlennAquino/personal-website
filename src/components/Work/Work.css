@@ -1,5 +1,5 @@
 /* Style for work experience container */
-#work-container {
+#work {
   min-height: 100dvh;
   color: var(--primary-color);
   display: flex;
@@ -66,7 +66,7 @@
 
 /* Responsive design for medium monitor */
 @media (max-width: 1280px) {
-  #work-container {
+  #work {
     & h1 {
       font-size: 3rem;
     }
@@ -98,7 +98,7 @@
 
 /* Responsive design for small monitor */
 @media (max-width: 1024px) {
-  #work-container {
+  #work {
     & h1 {
       font-size: 2.75rem;
     }
@@ -130,7 +130,7 @@
 
 /* Responsive design for tablet */
 @media (max-width: 900px) {
-  #work-container {
+  #work {
     & h1 {
       font-size: 2rem;
     }
@@ -154,7 +154,7 @@
 
 /* Responsive design for large mobile */
 @media (max-width: 600px) {
-  #work-container {
+  #work {
     & h1 {
       font-size: 1.75rem;
       text-align: center;
