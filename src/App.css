@@ -22,6 +22,18 @@ body {
   }
 }
 
+/* Responsive design for large monitor */
+@media (min-width: 1920px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  #root {
+    max-width: 1920px;
+  }
+}
+
 /* Responsive design for small monitor */
 @media (max-width: 1024px) {
   #root > * {

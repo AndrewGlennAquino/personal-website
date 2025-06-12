@@ -1,3 +1,4 @@
+/* Style for work experience container */
 #work-container {
   min-height: 100dvh;
   color: var(--primary-color);
@@ -6,19 +7,23 @@
   justify-content: center;
   gap: 1rem;
 
+  /* Style for container header */
   & h1 {
     font-size: 4rem;
   }
 
+  /* Style for cards container */
   & .experience-cards-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
+    /* Style for an experience card */
     & .experience-card {
       display: flex;
       gap: 1rem;
 
+      
       & .experience-card-decoration {
         display: flex;
         flex-direction: column;
