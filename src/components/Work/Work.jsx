@@ -51,7 +51,7 @@ function Work() {
       <motion.h1
         initial="init"
         whileInView="animate"
-        viewport={{ amount: "all" }}
+        viewport={{ amount: "all", once: true }}
         variants={typewritterVariants}
       >
         <TypeWritter string={"Work experience"} />

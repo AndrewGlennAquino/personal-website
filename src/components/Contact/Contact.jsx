@@ -8,14 +8,23 @@ import SocialMediaIcon from "../SocialMediaIcon/SocialMediaIcon.jsx";
 function Contact() {
   const contactVariants = {
     init: { rotate: "-1deg" },
-    animate: { rotate: "1deg", transition: { duration: 0.125, delay: 0.125, repeat: Infinity, repeatType: "reverse", repeatDelay: 0.5 } },
-    scale: { scale: 1.25 },
+    animate: {
+      rotate: "1deg",
+      transition: {
+        duration: 0.125,
+        delay: 0.125,
+        repeat: Infinity,
+        repeatType: "reverse",
+        repeatDelay: 0.5,
+      },
+    },
+    scale: { scale: 1.15 },
   };
 
   return (
     <section id="contact">
       <motion.a
-        href="#"
+        href="mailto:andrewglennaquino@gmail.com"
         initial="init"
         animate="animate"
         whileHover="scale"
@@ -29,8 +38,16 @@ function Contact() {
 
       <ul>
         <p>or here!</p>
-        <SocialMediaIcon icon={githubIcon} url="#" alt="Github" />
-        <SocialMediaIcon icon={linkedinIcon} url="#" alt="Linkedin" />
+        <SocialMediaIcon
+          icon={githubIcon}
+          url="https://github.com/AndrewGlennAquino"
+          alt="Github"
+        />
+        <SocialMediaIcon
+          icon={linkedinIcon}
+          url="https://www.linkedin.com/in/andrew-glenn-aquino/"
+          alt="Linkedin"
+        />
       </ul>
     </section>
   );

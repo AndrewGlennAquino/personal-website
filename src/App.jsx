@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <MouseTrail color="rgb(240, 240, 240)" />
-      {/* <Loading /> */}
+      <Loading />
       <Stars />
       <Nav />
       <Hero />

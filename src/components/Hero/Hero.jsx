@@ -45,13 +45,29 @@ function Hero() {
           <TypeWritter string={"Andrew Glenn Aquino"} />
         </motion.h1>
 
-        <motion.h2 initial="init" animate="animateOpacity" variants={opacityVariants}>
+        <motion.h2
+          initial="init"
+          animate="animateOpacity"
+          variants={opacityVariants}
+        >
           Software Developer
         </motion.h2>
 
-        <motion.ul initial="init" animate="animateOpacity" variants={opacityVariants}>
-          <SocialMediaIcon icon={githubIcon} url="#" alt="Github" />
-          <SocialMediaIcon icon={linkedinIcon} url="#" alt="Linkedin" />
+        <motion.ul
+          initial="init"
+          animate="animateOpacity"
+          variants={opacityVariants}
+        >
+          <SocialMediaIcon
+            icon={githubIcon}
+            url="https://github.com/AndrewGlennAquino"
+            alt="Github"
+          />
+          <SocialMediaIcon
+            icon={linkedinIcon}
+            url="https://www.linkedin.com/in/andrew-glenn-aquino/"
+            alt="Linkedin"
+          />
         </motion.ul>
       </div>
     </section>
