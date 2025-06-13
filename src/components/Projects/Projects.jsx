@@ -1,7 +1,7 @@
 import "./Projects.css";
 import { motion } from "motion/react";
 import TypeWritter from "../TypeWritter/TypeWritter";
-import openInNewIcon from "../../assets/images/open-in-new-icon.png";
+import openInNewIcon from "../../assets/images/open-in-new-icon.svg";
 import tempImage from "../../assets/images/placeholder.jpg";
 
 /**

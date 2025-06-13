@@ -1,40 +1,31 @@
-/* Hero container style */
-#home {
-  color: var(--primary-color);
-  position: relative;
-  min-height: 100dvh;
+#contact {
+  min-height: 25dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 
-  /* Title container style */
-  & .hero-container-text {
-    z-index: 2;
+  & a {
+    color: var(--primary-color);
+    cursor: none;
+    text-decoration: none;
+  }
+
+  & h1 {
+    color: var(--primary-color);
+    font-size: 4rem;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
-  }
+    position: relative;
 
-  /* h1 and h2 shared styles */
-  & h1,
-  & h2 {
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-  }
-
-  /* h1 style */
-  & h1 {
-    font-size: 4rem;
-  }
-
-  /* h2 style */
-  & h2 {
-    font-size: 3rem;
+    & img {
+      position: relative;
+      top: 0.5rem;
+      width: 3rem;
+    }
   }
 
   /* Social media icon style */
@@ -70,67 +61,69 @@
 
 /* Responsive design for medium monitor */
 @media (max-width: 1280px) {
-  #home {
+  #contact {
     & h1 {
       font-size: 3rem;
-    }
 
-    & h2 {
-      font-size: 2.25rem;
+      & img {
+        width: 2rem;
+      }
     }
   }
 }
 
 /* Responsive design for small monitor */
 @media (max-width: 1024px) {
-  #home {
+  #contact {
     & h1 {
       font-size: 2.75rem;
-    }
 
-    & h2 {
-      font-size: 2rem;
+      & img {
+        width: 1.75rem;
+      }
     }
   }
 }
 
 /* Responsive design for tablet */
 @media (max-width: 900px) {
-  #home {
+  #contact {
     & h1 {
       font-size: 2rem;
-    }
 
-    & h2 {
-      font-size: 1.5rem;
+      & img {
+        top: 0.25rem;
+        width: 1.5rem;
+      }
     }
   }
 }
 
 /* Responsive design for large mobile */
 @media (max-width: 600px) {
-  #home {
+  #contact {
     gap: 2rem;
 
     & h1 {
       font-size: 1.75rem;
-    }
 
-    & h2 {
-      font-size: 1.5rem;
+      & img {
+        width: 1.5rem;
+      }
     }
   }
 }
 
 /* Responsive design for small mobile */
 @media (max-width: 350px) {
-  #home {
+  #contact {
     & h1 {
       font-size: 1.5rem;
-    }
 
-    & h2 {
-      font-size: 1.25rem;
+      & img {
+        top: 0.125rem;
+        width: 1.25rem;
+      }
     }
   }
 }
