@@ -31,7 +31,7 @@ function Contact() {
 
     setTimeout(() => {
       setClicked(false);
-    }, 3000);
+    }, 5000);
   };
 
   return (
@@ -57,7 +57,7 @@ function Contact() {
       </motion.a>
 
       <ul>
-        <p>or here!</p>
+        <p>more about me here!</p>
         <SocialMediaIcon
           icon={githubIcon}
           url="https://github.com/AndrewGlennAquino"

@@ -45,13 +45,26 @@ function About() {
         <motion.p
           initial="init"
           whileInView="animate"
-          viewport={{ amount: "all" }}
           variants={opacityVariants}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          officia rerum reiciendis reprehenderit accusamus eum tenetur quos
-          dolore. Quasi rem exercitationem, quaerat voluptatibus odit itaque
-          atque voluptates eius minima pariatur.
+          Nice to meet you! I'm Andrew and I'm a software developer. I recently
+          graduated from the University of Wisconsin-Madison with a Bachelor of
+          Science in Computer Science. I'm currently employed as a contractor
+          for{" "}
+          <motion.a
+            whileHover={{ scale: 1.25 }}
+            whileTap={{ scale: 1.25 }}
+            href="https://www.revature.com/"
+            target="_blank"
+          >
+            Revature.
+          </motion.a>{" "}
+          I also develop websites for entrepreneurs, local businesses, and
+          anyone who wants one! <br />
+          <br /> In my spare time when my fingers are not on a keyboard, I stay
+          active, and I'm currently training for a marathon. I'm a hardcore fan
+          of professional basketball and boxing, which are sports I played
+          in high school and college respectively.
         </motion.p>
       </div>
 

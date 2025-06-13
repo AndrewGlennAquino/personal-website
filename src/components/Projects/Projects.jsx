@@ -2,11 +2,14 @@ import "./Projects.css";
 import { motion } from "motion/react";
 import TypeWritter from "../TypeWritter/TypeWritter";
 import openInNewIcon from "../../assets/images/open-in-new-icon.svg";
-import tempImage from "../../assets/images/placeholder.jpg";
+import githubWallpaper from "../../assets/images/github-wallpaper.jpg";
+import fitHausHero from "../../assets/images/fit-haus-hero.png"
+import personalPortfolioHero from "../../assets/images/personal-portfolio-hero.png"
+import socialMediaBlogApi from "../../assets/images/social-media-blog-api.png"
 
 /**
  * Animated card component for projects
- * 
+ *
  * @param {{string, string, img, string}} props Project name, description, image, and Github URL
  */
 function Project({ name, description, image, url }) {
@@ -34,19 +37,16 @@ function Project({ name, description, image, url }) {
           variants={projectVariants}
         >
           <div className={`project-image`}>
-            <img
-              src={image}
-              alt={`Screenshot from project ${name}`}
-            />
+            <img src={image} alt={`Screenshot from project ${name}`} />
           </div>
-          <h2>
-            {name}
-            <img
-              src={openInNewIcon}
-              alt="Open project in new tab"
-            />
-          </h2>
-          <p>{description}</p>
+          
+          <div className="project-text">
+            <h2>
+              {name}
+              <img src={openInNewIcon} alt="Open project in new tab" />
+            </h2>
+            <p>{description}</p>
+          </div>
         </motion.div>
       </motion.article>
     </a>
@@ -63,11 +63,6 @@ function Projects() {
       transition: { delayChildren: 0.125, staggerChildren: 0.125 },
     },
   };
-
-  const tempName = "Project";
-  const tempDesc =
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam minus, provident accusantium quis veritatis labore dolore quam! Doloribus cumque praesentium veritatis exercitationem, eos perspiciatis velit delectus est ipsam nihil aliquam.";
-  const tempGithubUrl = "#";
 
   return (
     <section id="projects">
@@ -92,28 +87,32 @@ function Projects() {
         }}
       >
         <Project
-          name={tempName}
-          description={tempDesc}
-          image={tempImage}
-          url={tempGithubUrl}
+          name={"Coffee Haus Website"}
+          description={
+            "Current project for Coffee Haus, a local coffee and bubble tea store. Responsive, single-page application built using React, Tailwind CSS, and Motion for animations."
+          }
+          image={githubWallpaper}
+          url={"https://github.com/AndrewGlennAquino/coffee-haus-website"}
         />
         <Project
-          name={tempName}
-          description={tempDesc}
-          image={tempImage}
-          url={tempGithubUrl}
+          name={"Fit Haus Mazamitla Website"}
+          description={
+            "Current project for responsive, single-page application for a local entrepreneur's premium gym in Mazamitla, Jalisco, Mexico. Built using React, Vanilla CSS, and Motion for animations."
+          }
+          image={fitHausHero}
+          url={"https://github.com/AndrewGlennAquino/fit-haus-mazamitla-website"}
         />
         <Project
-          name={tempName}
-          description={tempDesc}
-          image={tempImage}
-          url={tempGithubUrl}
+          name={"Personal Portfoio"}
+          description={"The website you are viewing now. Built using React, Vanilla CSS, React Three Fiber, and Motion for animation."}
+          image={personalPortfolioHero}
+          url={"https://github.com/AndrewGlennAquino/personal-website"}
         />
         <Project
-          name={tempName}
-          description={tempDesc}
-          image={tempImage}
-          url={tempGithubUrl}
+          name={"Social Media Blog API"}
+          description={"Backend application built in Java for a hypothetical social media app. Leverage the use of the Spring framework to perform convential data manipulation logic for input supplied from a front end."}
+          image={socialMediaBlogApi}
+          url={"https://github.com/AndrewGlennAquino/AndrewGlennAquino-pep-spring-project"}
         />
       </motion.div>
     </section>

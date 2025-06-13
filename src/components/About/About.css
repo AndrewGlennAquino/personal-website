@@ -23,6 +23,14 @@
     & p {
       font-size: 1.5rem;
     }
+
+    & a {
+      display: inline-block;
+      cursor: none;
+      color: #FF5D00;
+      font-weight: bold;
+      text-decoration: none;
+    }
   }
 
   /* Style for container holding headshot */

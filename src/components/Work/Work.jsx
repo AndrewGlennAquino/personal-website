@@ -7,7 +7,7 @@ function Experience({ company, title, dateStarted, dateEnded, description }) {
   // Animation variatns for card
   const cardVariants = {
     init: { opacity: 0 },
-    animate: { opacity: 1, transition: { duration: 0.5, ease: "linear" }}
+    animate: { opacity: 1, transition: { duration: 0.5, ease: "linear" } },
   };
 
   return (
@@ -20,7 +20,7 @@ function Experience({ company, title, dateStarted, dateEnded, description }) {
         <h2>{company}</h2>
         <h3>{title}</h3>
         <p>{description}</p>
-        <h4>{`${dateStarted}-${dateEnded}`}</h4>
+        <h4>{`${dateStarted} - ${dateEnded}`}</h4>
       </div>
     </motion.div>
   );
@@ -42,9 +42,9 @@ function Work() {
     init: { opacity: 0 },
     animate: {
       opacity: 1,
-      transition: { delayChildren: 0.125, staggerChildren: 0.5 }
-    }
-  }
+      transition: { delayChildren: 0.125, staggerChildren: 0.5 },
+    },
+  };
 
   return (
     <section id="work">
@@ -57,39 +57,32 @@ function Work() {
         <TypeWritter string={"Work experience"} />
       </motion.h1>
 
-      <motion.div 
+      <motion.div
         className="experience-cards-container"
         initial="init"
         whileInView="animate"
         variants={cardContainerVariants}
       >
         <Experience
-          company="Testing"
-          title="Tester"
-          dateStarted="0"
+          company="Coffee Haus"
+          title="Software Developer"
+          dateStarted="June 2025"
           dateEnded="Present"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat mollitia consectetur, adipisci non perspiciatis veritatis porro dolores minus fugiat quaerat, vero saepe in, cum tenetur magni! Fuga voluptatum eos iste."
+          description="I'm building a custom website for a local coffee and bubble tea shop. The site is built with React and styled using Tailwind CSS, which I’m actively learning and applying throughout the project. I’m using Motion to add smooth, engaging animations that align with the shop’s fun vibe. As I work, I focus on best practices for responsive design, performance optimization, and accessibility."
         />
         <Experience
-          company="Testing"
-          title="Tester"
-          dateStarted="0"
+          company="Fit Haus Mazamitla"
+          title="Software Developer"
+          dateStarted="June 2025"
           dateEnded="Present"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat mollitia consectetur, adipisci non perspiciatis veritatis porro dolores minus fugiat quaerat, vero saepe in, cum tenetur magni! Fuga voluptatum eos iste."
+          description="I'm building a responsive single-page website for a local entrepreneur's gym using React and Vanilla CSS. I'm using Motion to implement smooth, engaging animations that enhance user experience. I focus on optimizing the site for performance and accessibility across devices."
         />
         <Experience
-          company="Testing"
-          title="Tester"
-          dateStarted="0"
+          company="Revature"
+          title="Software Engineer"
+          dateStarted="February 2025"
           dateEnded="Present"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat mollitia consectetur, adipisci non perspiciatis veritatis porro dolores minus fugiat quaerat, vero saepe in, cum tenetur magni! Fuga voluptatum eos iste."
-        />
-        <Experience
-          company="Testing"
-          title="Tester"
-          dateStarted="0"
-          dateEnded="Present"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat mollitia consectetur, adipisci non perspiciatis veritatis porro dolores minus fugiat quaerat, vero saepe in, cum tenetur magni! Fuga voluptatum eos iste."
+          description="Train in enterprise-level software development with a focus on Java, SQL, and Spring framework. Develop RESTful APIs using Spring Boot and integrated backend services. Design database schemas and write efficient SQL queries for data manipulation. Utilize Maven in development workflow."
         />
       </motion.div>
     </section>
