@@ -68,21 +68,21 @@ function Work() {
           title="Software Developer"
           dateStarted="June 2025"
           dateEnded="Present"
-          description="I'm building a custom website for a local coffee and bubble tea shop. The site is built with React and styled using Tailwind CSS, which I’m actively learning and applying throughout the project. I’m using Motion to add smooth, engaging animations that align with the shop’s fun vibe. As I work, I focus on best practices for responsive design, performance optimization, and accessibility."
+          description="Build a custom website for a local coffee and bubble tea shop using React and styled using Tailwind CSS. Use Motion to add fun animations that align with the shop’s comforting vibe. Focus on the best practices for responsive design and accessibility."
         />
         <Experience
           company="Fit Haus Mazamitla"
           title="Software Developer"
           dateStarted="June 2025"
           dateEnded="Present"
-          description="I'm building a responsive single-page website for a local entrepreneur's gym using React and Vanilla CSS. I'm using Motion to implement smooth, engaging animations that enhance user experience. I focus on optimizing the site for performance and accessibility across devices."
+          description="Build a responsive single-page website for a local entrepreneur's gym using React and Tailwind CSS. Use Motion to implement smooth, engaging animations that catch the users attention. Consistently test application on different devices to guarantee responsive design."
         />
         <Experience
           company="Revature"
           title="Software Engineer"
           dateStarted="February 2025"
           dateEnded="Present"
-          description="Train in enterprise-level software development with a focus on Java, SQL, and Spring framework. Develop RESTful APIs using Spring Boot and integrated backend services. Design database schemas and write efficient SQL queries for data manipulation. Utilize Maven in development workflow."
+          description="Train in enterprise-level software development with a focus on Java, SQL, and the Spring framework. Develop RESTful APIs using Spring Boot and integrated backend services. Design database schemas and write efficient SQL queries for data manipulation. Utilize Maven in development workflow."
         />
       </motion.div>
     </section>

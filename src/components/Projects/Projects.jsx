@@ -89,7 +89,7 @@ function Projects() {
         <Project
           name={"Coffee Haus Website"}
           description={
-            "Current project for Coffee Haus, a local coffee and bubble tea store. Responsive, single-page application built using React, Tailwind CSS, and Motion for animations."
+            "Current project for Coffee Haus, a local coffee and bubble tea store. Tasked with building a responsive, single-page application built using React, Tailwind CSS, and Motion for animations."
           }
           image={githubWallpaper}
           url={"https://github.com/AndrewGlennAquino/coffee-haus-website"}
@@ -97,10 +97,10 @@ function Projects() {
         <Project
           name={"Fit Haus Mazamitla Website"}
           description={
-            "Current project for responsive, single-page application for a local entrepreneur's premium gym in Mazamitla, Jalisco, Mexico. Built using React, Vanilla CSS, and Motion for animations."
+            "Current project to make an engaging, responsive, single-page application for a local entrepreneur's premium gym in Mazamitla, Jalisco, Mexico. Built using React, Tailwind CSS, and Motion for animations."
           }
           image={fitHausHero}
-          url={"https://github.com/AndrewGlennAquino/fit-haus-mazamitla-website"}
+          url={"https://github.com/AndrewGlennAquino/fit-haus-website"}
         />
         <Project
           name={"Personal Portfoio"}
