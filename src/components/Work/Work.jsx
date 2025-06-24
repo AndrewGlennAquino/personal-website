@@ -64,25 +64,18 @@ function Work() {
         variants={cardContainerVariants}
       >
         <Experience
-          company="Coffee Haus"
-          title="Software Developer"
-          dateStarted="June 2025"
+          company="Freelance Front-End Developer"
+          title="Self-Employed"
+          dateStarted="March 2025"
           dateEnded="Present"
-          description="Build a custom website for a local coffee and bubble tea shop using React and styled using Tailwind CSS. Use Motion to add fun animations that align with the shop’s comforting vibe. Focus on the best practices for responsive design and accessibility."
-        />
-        <Experience
-          company="Fit Haus Mazamitla"
-          title="Software Developer"
-          dateStarted="June 2025"
-          dateEnded="Present"
-          description="Build a responsive single-page website for a local entrepreneur's gym using React and Tailwind CSS. Use Motion to implement smooth, engaging animations that catch the users attention. Consistently test application on different devices to guarantee responsive design."
+          description="Design and develop responsive websites for local businesses using React, Tailwind CSS, and various React libraries. Collaborate with business owners to gather requirements and assets. Deliver user-focused designs that comply with Web Content Accessibility Guidelines (WCAG). Deploy products using Github Pages with custom domains registered through Cloudflare, ensuring security and no overhead expenses for the business owner."
         />
         <Experience
           company="Revature"
           title="Software Engineer"
-          dateStarted="February 2025"
+          dateStarted="December 2024"
           dateEnded="Present"
-          description="Train in enterprise-level software development with a focus on Java, SQL, and the Spring framework. Develop RESTful APIs using Spring Boot and integrated backend services. Design database schemas and write efficient SQL queries for data manipulation. Utilize Maven in development workflow."
+          description="Gained hands-on experience with Spring and SQL, and reinforced Java proficiency through structured training. Designed, developed, and tested Spring-based projects, demonstrating understanding of backend development and database integration practices. Passed multiple rigorous assessments, validating a deep understanding of Java, Spring, and SQL concepts. Structured training on client-specific tech stacks for seamless transition into development teams."
         />
       </motion.div>
     </section>

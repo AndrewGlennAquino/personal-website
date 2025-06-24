@@ -47,7 +47,7 @@ function About() {
           whileInView="animate"
           variants={opacityVariants}
         >
-          Nice to meet you! I'm Andrew and I'm a software developer. I recently
+          Nice to meet you! I'm Andrew and I'm a front-end developer. I recently
           graduated from the University of Wisconsin-Madison with a Bachelor of
           Science in Computer Science. I'm currently employed as a contractor
           for{" "}

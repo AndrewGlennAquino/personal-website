@@ -50,7 +50,7 @@ function Hero() {
           animate="animateOpacity"
           variants={opacityVariants}
         >
-          Software Developer
+          Front-End Developer
         </motion.h2>
 
         <motion.ul

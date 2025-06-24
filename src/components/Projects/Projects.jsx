@@ -3,9 +3,9 @@ import { motion } from "motion/react";
 import TypeWritter from "../TypeWritter/TypeWritter";
 import openInNewIcon from "../../assets/images/open-in-new-icon.svg";
 import githubWallpaper from "../../assets/images/github-wallpaper.jpg";
-import fitHausHero from "../../assets/images/fit-haus-hero.png"
-import personalPortfolioHero from "../../assets/images/personal-portfolio-hero.png"
-import socialMediaBlogApi from "../../assets/images/social-media-blog-api.png"
+import fitHausHero from "../../assets/images/fit-haus-hero.png";
+import personalPortfolioHero from "../../assets/images/personal-portfolio-hero.png";
+import socialMediaBlogApi from "../../assets/images/social-media-blog-api.png";
 
 /**
  * Animated card component for projects
@@ -39,7 +39,7 @@ function Project({ name, description, image, url }) {
           <div className={`project-image`}>
             <img src={image} alt={`Screenshot from project ${name}`} />
           </div>
-          
+
           <div className="project-text">
             <h2>
               {name}
@@ -89,7 +89,7 @@ function Projects() {
         <Project
           name={"Coffee Haus Website"}
           description={
-            "Current project for Coffee Haus, a local coffee and bubble tea store. Tasked with building a responsive, single-page application built using React, Tailwind CSS, and Motion for animations."
+            "Ongoing project for Coffee Haus, a local coffee and bubble tea store with two locations. Building using React.js, Tailwind CSS, Motion, and React Three Fiber, aiming to match the store’s cozy and bubbly aesthetic. Adhere to Web Content Accessibility Guidelines (WCAG) and design laws for UX/UI."
           }
           image={githubWallpaper}
           url={"https://github.com/AndrewGlennAquino/coffee-haus-website"}
@@ -97,22 +97,28 @@ function Projects() {
         <Project
           name={"Fit Haus Mazamitla Website"}
           description={
-            "Current project to make an engaging, responsive, single-page application for a local entrepreneur's premium gym in Mazamitla, Jalisco, Mexico. Built using React, Tailwind CSS, and Motion for animations."
+            "Delivered a responsive website for a local entrepreneur’s gym business in Mazamitla, Mexico. Built using React.js, Tailwind CSS, and Motion, focusing on bold fonts and fast animations for a sporty aesthetic. Deployed using Github Pages and a custom domain from Cloudflare, ensuring security and no overhead expense to the owner."
           }
           image={fitHausHero}
           url={"https://github.com/AndrewGlennAquino/fit-haus-website"}
         />
         <Project
           name={"Personal Portfoio"}
-          description={"The website you are viewing now. Built using React, Vanilla CSS, React Three Fiber, and Motion for animation."}
+          description={
+            "The website you are viewing now. Built using React, Vanilla CSS, React Three Fiber, and Motion for animation."
+          }
           image={personalPortfolioHero}
           url={"https://github.com/AndrewGlennAquino/personal-website"}
         />
         <Project
           name={"Social Media Blog API"}
-          description={"Backend application built in Java for a hypothetical social media app. Leverage the use of the Spring framework to perform convential data manipulation logic for input supplied from a front end."}
+          description={
+            "Backend application built in Java for a hypothetical social media app. Leverage the use of the Spring framework to perform convential data manipulation logic for input supplied from a front end."
+          }
           image={socialMediaBlogApi}
-          url={"https://github.com/AndrewGlennAquino/AndrewGlennAquino-pep-spring-project"}
+          url={
+            "https://github.com/AndrewGlennAquino/AndrewGlennAquino-pep-spring-project"
+          }
         />
       </motion.div>
     </section>
