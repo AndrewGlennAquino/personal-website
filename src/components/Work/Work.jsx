@@ -68,7 +68,7 @@ function Work() {
           title="Self-Employed"
           dateStarted="March 2025"
           dateEnded="Present"
-          description="Design and develop responsive websites for local businesses using React, Tailwind CSS, and various React libraries. Collaborate with business owners to gather requirements and assets. Deliver user-focused designs that comply with Web Content Accessibility Guidelines (WCAG). Deploy products using Github Pages with custom domains registered through Cloudflare, ensuring security and no overhead expenses for the business owner."
+          description="Design and develop responsive websites for local businesses using React, Tailwind CSS, and various React libraries. Collaborate with business owners to gather requirements and assets. Deliver user-focused designs that comply with Web Content Accessibility Guidelines (WCAG) and effectively utilize 3rd party APIs that enhance the user experience. Deploy products using Github Pages with custom domains registered through Cloudflare and store API keys in environment variables, ensuring security and no overhead expenses for the business owner."
         />
         <Experience
           company="Revature"
