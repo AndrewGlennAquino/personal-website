@@ -64,7 +64,7 @@ function Work() {
         variants={cardContainerVariants}
       >
         <Experience
-          company="Freelance Front-End Developer"
+          company="Freelance Frontend Developer"
           title="Self-Employed"
           dateStarted="March 2025"
           dateEnded="Present"
