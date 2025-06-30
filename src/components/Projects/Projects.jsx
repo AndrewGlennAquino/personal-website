@@ -97,7 +97,7 @@ function Projects() {
         <Project
           name={"Fit Haus Mazamitla Website"}
           description={
-            "Deliver a responsive website for a local entrepreneur’s gym business in Mazamitla, Mexico. Building using React.js, Tailwind CSS, Motion, and Google Maps API, focusing on bold fonts and fast animations for a sporty aesthetic. Planning to deploy using Github Pages and a custom domain from Cloudflare, ensuring security and no overhead expense to the owner."
+            "Deliver a responsive, single page application for a local entrepreneur’s gym business in Mazamitla, Mexico. Building using React.js, Tailwind CSS, Motion, and Google Maps API, focusing on bold fonts and fast animations for a sporty aesthetic. Planning to deploy using Github Pages and a custom domain from Cloudflare, ensuring security and no overhead expense to the owner."
           }
           image={fitHausHero}
           url={"https://github.com/AndrewGlennAquino/fit-haus-website"}
