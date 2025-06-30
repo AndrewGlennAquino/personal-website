@@ -90,7 +90,7 @@ function Projects() {
         <Project
           name={"Coffee Haus Website"}
           description={
-            "Ongoing project for Coffee Haus, a local coffee and bubble tea store with two locations. Building using React.js, Tailwind CSS, Motion, and React Three Fiber, aiming to match the store’s cozy and bubbly aesthetic. Adhere to Web Content Accessibility Guidelines (WCAG) and design laws for UX/UI."
+            "Ongoing project for Coffee Haus, a local coffee and bubble tea store with two locations. Building using React.js, Tailwind CSS, Motion, and React Three Fiber, aiming to match the store’s cozy and bubbly aesthetic. Adhere to accessibility guidelines (WCAG) and design laws for UX/UI."
           }
           image={githubWallpaper}
           url={"https://github.com/AndrewGlennAquino/coffee-haus-website"}
