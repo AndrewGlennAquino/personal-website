@@ -75,6 +75,7 @@ function Projects() {
         <TypeWritter string="Projects" />
       </motion.h1>
 
+      {/* Project card container */}
       <motion.div
         className="projects"
         initial={{ opacity: 0 }}
