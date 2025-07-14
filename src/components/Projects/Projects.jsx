@@ -2,7 +2,7 @@ import "./Projects.css";
 import { motion } from "motion/react";
 import TypeWritter from "../TypeWritter/TypeWritter";
 import openInNewIcon from "../../assets/images/open-in-new-icon.svg";
-import githubWallpaper from "../../assets/images/github-wallpaper.jpg";
+import brewNBubbleScreenshot from "../../assets/images/brew-n-bubble-screenshot.png";
 import fitHausHero from "../../assets/images/fit-haus-hero.png";
 import personalPortfolioHero from "../../assets/images/personal-portfolio-hero.png";
 import socialMediaBlogApi from "../../assets/images/social-media-blog-api.png";
@@ -88,17 +88,17 @@ function Projects() {
         }}
       >
         <Project
-          name={"Coffee Haus Website"}
+          name={"Brew 'n Bubble Website"}
           description={
-            "Ongoing project for Coffee Haus, a local coffee and bubble tea store with two locations. Building using React.js, Tailwind CSS, Motion, and React Three Fiber, aiming to match the store’s cozy and bubbly aesthetic. Adhere to accessibility guidelines (WCAG) and design laws for UX/UI."
+            "Ongoing project for Brew 'n Bubble, a local coffee and bubble tea store. Building using React.js, Tailwind CSS, Framer Motion, and Google Maps API, aiming to match the store’s cozy aesthetic. Adhere to accessibility guidelines (WCAG) and design laws for UX/UI."
           }
-          image={githubWallpaper}
-          url={"https://github.com/AndrewGlennAquino/coffee-haus-website"}
+          image={brewNBubbleScreenshot}
+          url={"https://github.com/AndrewGlennAquino/brew-n-bubble-website"}
         />
         <Project
           name={"Fit Haus Mazamitla Website"}
           description={
-            "Deliver a responsive, single page application for a local entrepreneur’s gym business in Mazamitla, Mexico. Building using React.js, Tailwind CSS, Motion, and Google Maps API, focusing on bold fonts and fast animations for a sporty aesthetic. Planning to deploy using Github Pages and a custom domain from Cloudflare, ensuring security and no overhead expense to the owner."
+            "Deliver a responsive, single page application for a local entrepreneur’s gym business in Mazamitla, Mexico. Building using React.js, Tailwind CSS, Framer Motion, and Google Maps API, focusing on bold fonts and fast animations for a sporty aesthetic. Planning to deploy using Github Pages and a custom domain from Cloudflare, ensuring security and no overhead expense to the owner."
           }
           image={fitHausHero}
           url={"https://github.com/AndrewGlennAquino/fit-haus-website"}
