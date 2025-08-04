@@ -64,18 +64,18 @@ function Work() {
         variants={cardContainerVariants}
       >
         <Experience
-          company="Freelance Frontend Developer"
+          company="Freelance Full Stack Developer"
           title="Self-Employed"
           dateStarted="March 2025"
           dateEnded="Present"
-          description="Design and develop responsive websites for local businesses using React, Tailwind CSS, and various React libraries. Collaborate with business owners to gather requirements and assets. Deliver user-focused designs that comply with Web Content Accessibility Guidelines (WCAG) and effectively utilize 3rd party APIs that enhance the user experience. Deploy products using Github Pages with custom domains registered through Cloudflare and store API keys in environment variables, ensuring security and no overhead expenses for the business owner."
+          description="Design and develop responsive websites for local businesses using TypeScript, React.js, Tailwind CSS, Node.js, and Express.js. Collaborate directly with clients to define requirements and consult on design decisions that best align with their brand and audience. Deliver user-focused designs that comply with accessibility guidelines (WCAG) and follow SEO best practices. Deploy web applications leveraging Cloudflare DNS, Netlify, and Render to deliver secure, low cost, and scalable hosting for clients."
         />
         <Experience
           company="Revature"
           title="Software Engineer"
           dateStarted="December 2024"
           dateEnded="Present"
-          description="Gained hands-on experience with Spring and SQL, and reinforced Java proficiency through structured training. Designed, developed, and tested Spring-based projects, demonstrating understanding of backend development and database integration practices. Passed multiple rigorous assessments, validating a deep understanding of Java, Spring, and SQL concepts. Structured training on client-specific tech stacks for seamless transition into development teams."
+          description="Participated in an immersive backend development training reinforcing Java concepts, Spring Boot, and SQL. Designed, developed, and tested Spring based projects, strengthening understanding of RDBMS industry practices. Passed rigorous technical assessments, validating a deep understanding of Java, Spring, and SQL concepts. Structured training on client-specific tech stacks, demonstrating seamless transition into development teams and production environments."
         />
       </motion.div>
     </section>

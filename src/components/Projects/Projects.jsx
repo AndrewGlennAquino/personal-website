@@ -90,7 +90,7 @@ function Projects() {
         <Project
           name={"Brew 'n Bubble Website"}
           description={
-            "Ongoing project for Brew 'n Bubble, a local coffee and bubble tea store. Building using React.js, Tailwind CSS, Framer Motion, and Google Maps API, aiming to match the store’s cozy aesthetic. Adhere to accessibility guidelines (WCAG) and design laws for UX/UI."
+            "Produced an accessible responsive website for Brew 'n Bubble, a local coffee and bubble tea store. Aimed to match the store’s cozy aesthetic, drawing themes from the store's interior as inspiration for component design. Adhere to Web Content Accessibility Guidelines (WCAG) and design laws of UX/UI for optimized user experience and SEO."
           }
           image={brewNBubbleScreenshot}
           url={"https://github.com/AndrewGlennAquino/brew-n-bubble-website"}
@@ -98,7 +98,7 @@ function Projects() {
         <Project
           name={"Fit Haus Mazamitla Website"}
           description={
-            "Deliver a responsive, single page application for a local entrepreneur’s gym business in Mazamitla, Mexico. Building using React.js, Tailwind CSS, Framer Motion, and Google Maps API, focusing on bold fonts and fast animations for a sporty aesthetic. Planning to deploy using Github Pages and a custom domain from Cloudflare, ensuring security and no overhead expense to the owner."
+            "Delivered a responsive, single page application for a local entrepreneur’s gym business in Mazamitla, Mexico. Focus on bold fonts, flat edges, and fast animations for a sporty aesthetic, inspired by websites from sport apparel brands. Collaborated closely with business owner for stylistic decisions that aligned with the target audience, which helped optimize SEO."
           }
           image={fitHausHero}
           url={"https://github.com/AndrewGlennAquino/fit-haus-website"}
@@ -114,7 +114,7 @@ function Projects() {
         <Project
           name={"Social Media Blog API"}
           description={
-            "Backend application built in Java for a hypothetical social media app. Leverage the use of the Spring framework to perform convential data manipulation logic for input supplied from a front end."
+            "Constructed a Social Media API leveraging Spring Boot and REST techniques. Implemented user registration, authentication, and message CRUD operations using optimized queries to minimize search time. Utilized Spring Boot’s dependency injection and efficient database management techniques to streamline data persistence, improve performance, and code readability."
           }
           image={socialMediaBlogApi}
           url={

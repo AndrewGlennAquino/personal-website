@@ -47,10 +47,10 @@ function About() {
           whileInView="animate"
           variants={opacityVariants}
         >
-          Nice to meet you! I'm Andrew and I'm a frontend developer. I recently
-          graduated from the University of Wisconsin-Madison with a Bachelor of
-          Science in Computer Science. I'm currently employed as a contractor
-          for{" "}
+          Nice to meet you! I'm Andrew and I'm a full stack developer. I
+          recently graduated from the University of Wisconsin-Madison with a
+          Bachelor of Science in Computer Science. I'm currently employed as a
+          contractor for{" "}
           <motion.a
             whileHover={{ scale: 1.25 }}
             whileTap={{ scale: 1.25 }}
@@ -63,8 +63,8 @@ function About() {
           anyone who wants one! <br />
           <br /> In my spare time when my fingers are not on a keyboard, I stay
           active, and I'm currently training for a marathon. I'm a hardcore fan
-          of professional basketball and boxing, which are sports I played
-          in high school and college respectively.
+          of professional basketball and boxing, which are sports I played in
+          high school and college respectively.
         </motion.p>
       </div>
 
