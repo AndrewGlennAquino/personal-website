@@ -1,8 +1,6 @@
 # Personal Website
 This website was developed to be an all encompassing page that includes my contact information (GitHub, LinkedIn, Email), a short about me section, a portfolio of recent projects, and work experience. I also designed the website to exhibit my abilities as a developer, showing off my skills using the React, Motion, and React Three Fiber libraries, which are libraries I was actively learning as I developed the project.
 
-**Website:** https://www.andrewglennaquino.dev/
-
 ## How to run project locally
 To run the project on your machine, follow these steps:
 
